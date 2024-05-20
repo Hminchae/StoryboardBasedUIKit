@@ -59,5 +59,16 @@ class ViewController: UIViewController {
         count[sender.tag] += 1
         labelList[sender.tag].text = "\(count[sender.tag])번 클릭!"
     }
+    // 키보드 내리는 방법
+    // 1. did end on exit
+    // 2. view.endEditing(true)
+    @IBAction func keyboardDismiss(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+         // view.isUserInteractionEnabled -> 제스처 활성화 코드
+    }
+    
+    @IBAction func imageViewTapped(_ sender: UITapGestureRecognizer) {
+        print("???????")
+    }
 }
 
