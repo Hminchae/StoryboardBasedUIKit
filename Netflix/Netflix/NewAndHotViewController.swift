@@ -72,7 +72,6 @@ class NewAndHotViewController: UIViewController {
     }
     
     @IBAction func firstButtonClicked(_ sender: UIButton) {
-        print("야호")
         newAndHotFirstButton.tintColor = .black
         newAndHotSecondButton.tintColor = .white
         newAndHotThirdButton.tintColor = .white
@@ -82,7 +81,6 @@ class NewAndHotViewController: UIViewController {
         newAndHotMainLabel.text = "이런! \n찾으시는 공개 예정 작품이 없습니다."
     }
     @IBAction func secondButtonClicked(_ sender: UIButton) {
-        print("야호후ㅗ")
         newAndHotFirstButton.tintColor = .white
         newAndHotSecondButton.tintColor = .black
         newAndHotThirdButton.tintColor = .white
@@ -92,7 +90,6 @@ class NewAndHotViewController: UIViewController {
         newAndHotMainLabel.text = "이런! \n찾으시는 인기 작품이 없습니다."
     }
     @IBAction func thirdButtonClicked(_ sender: UIButton) {
-        print("야호후ㅇㅇㅇㅇㅗ")
         newAndHotFirstButton.tintColor = .white
         newAndHotSecondButton.tintColor = .white
         newAndHotThirdButton.tintColor = .black

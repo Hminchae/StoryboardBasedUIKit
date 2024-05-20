@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var homeTitleLabel: UILabel!
     @IBOutlet weak var homeMainPoster: UIImageView!
     
-    @IBOutlet weak var homeMainButton: UIButton!
     @IBOutlet weak var homeLeftButton: UIButton!
     @IBOutlet weak var homeRightButton: UIButton!
     
@@ -38,8 +37,6 @@ class HomeViewController: UIViewController {
         
         homeTitleLabel.text = "황민채님"
         homeTitleLabel.font = .systemFont(ofSize: 24, weight: .heavy)
-        
-        homeMainButton.setTitle("", for: .normal)
         
         homeMainPoster.contentMode = .scaleAspectFill
         homeMainPoster.cornerRadius = 10

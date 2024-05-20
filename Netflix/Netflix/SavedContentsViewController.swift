@@ -45,6 +45,4 @@ class SavedContentsViewController: UIViewController {
         lookAroundButton.setTitleColor(.black, for: .normal)
         lookAroundButton.cornerRadius = 5
     }
-   
-
 }
