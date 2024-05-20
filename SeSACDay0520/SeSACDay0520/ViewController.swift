@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var twoLabel: UILabel!
     @IBOutlet weak var threeLabel: UILabel!
     
+    @IBOutlet var labelList: [UILabel]! // 연결하는 순서대로 인덱스 부여
     var oneCount = 0
     var twoCount = 0
     var threeCount = 0
@@ -48,17 +49,15 @@ class ViewController: UIViewController {
     ) {
         button.setTitleColor(minchae, for: .normal)
         button.setTitle(name, for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 30, weight: .heavy)
+        button.titleLabel?.font = .systemFont(ofSize: 15, weight: .heavy)
     }
     @IBAction func oneButtonClicked(_ sender: UIButton) {
         // 1. 어떤 버튼을 클릭했는지 어떻게 알까요?
         // -> currentTitle (옵셔널 조심, 버전 조심)
         // -> tag
-        print(sender.tag)
+        // 2. @IBOutlet 어떻게 못할까? -> 아울렛 컬렉션!
         count[sender.tag] += 1
-        oneLabel.text = "\(count[0])클릭!"
-        twoLabel.text = "\(count[1])클릭!"
-        threeLabel.text = "\(count[2])클릭!"
+        labelList[sender.tag].text = "\(count[sender.tag])번 클릭!"
     }
 }
 
