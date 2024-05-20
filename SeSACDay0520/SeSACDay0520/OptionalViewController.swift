@@ -9,7 +9,6 @@ import UIKit
 
 class OptionalViewController: UIViewController {
     
-    @IBOutlet weak var blueButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
     
