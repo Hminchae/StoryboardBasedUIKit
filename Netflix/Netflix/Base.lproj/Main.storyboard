@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RBO-qv-kMS">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -240,13 +241,13 @@
                     <connections>
                         <outlet property="addInfoLabel" destination="MQt-U7-V0I" id="Tof-vh-fLp"/>
                         <outlet property="addInfoSwitch" destination="XCF-7Q-l2F" id="jPy-KM-Msy"/>
-                        <outlet property="emailTextField" destination="qBm-PR-mL2" id="8Xi-U7-4Hu"/>
-                        <outlet property="locationTextField" destination="JTE-4V-Lks" id="LSY-M7-tq1"/>
                         <outlet property="loginTitleLabel" destination="2F1-F4-SAg" id="ZhC-we-5w9"/>
-                        <outlet property="nickNameTextField" destination="bUI-di-1sd" id="4ra-Sf-SpQ"/>
-                        <outlet property="passwordTextField" destination="JAQ-Y1-haE" id="9CK-ZW-rZC"/>
-                        <outlet property="recomendCodeTextField" destination="f02-GP-R33" id="GCR-2h-mJd"/>
                         <outlet property="signInButton" destination="nYd-Jl-9o1" id="GgW-bQ-Af2"/>
+                        <outletCollection property="textFieldCollection" destination="qBm-PR-mL2" collectionClass="NSMutableArray" id="Ja2-z4-vB5"/>
+                        <outletCollection property="textFieldCollection" destination="JAQ-Y1-haE" collectionClass="NSMutableArray" id="RIF-cE-3Fh"/>
+                        <outletCollection property="textFieldCollection" destination="bUI-di-1sd" collectionClass="NSMutableArray" id="W3c-mn-dI5"/>
+                        <outletCollection property="textFieldCollection" destination="JTE-4V-Lks" collectionClass="NSMutableArray" id="eqa-Ig-9D0"/>
+                        <outletCollection property="textFieldCollection" destination="f02-GP-R33" collectionClass="NSMutableArray" id="AdZ-ck-hmP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eR6-bg-LTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -552,7 +553,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
