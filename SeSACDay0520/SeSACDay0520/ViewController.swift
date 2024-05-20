@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var oneButton: UIButton!
     @IBOutlet weak var twoButton: UIButton!
     @IBOutlet weak var threeButton: UIButton!
@@ -18,6 +18,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var threeLabel: UILabel!
     
     var oneCount = 0
+    var twoCount = 0
+    var threeCount = 0
+    
+    var count = [0, 0, 0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +51,14 @@ class ViewController: UIViewController {
         button.titleLabel?.font = .systemFont(ofSize: 30, weight: .heavy)
     }
     @IBAction func oneButtonClicked(_ sender: UIButton) {
-        oneLabel.text = "\(oneCount)"
+        // 1. 어떤 버튼을 클릭했는지 어떻게 알까요?
+        // -> currentTitle (옵셔널 조심, 버전 조심)
+        // -> tag
+        print(sender.tag)
+        count[sender.tag] += 1
+        oneLabel.text = "\(count[0])클릭!"
+        twoLabel.text = "\(count[1])클릭!"
+        threeLabel.text = "\(count[2])클릭!"
     }
 }
 
