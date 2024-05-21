@@ -20,14 +20,43 @@ class DateViewController: UIViewController {
         super.viewDidLoad()
         
         configureDatePicker()
+        configureNavigationItem()
+        
         day100Label.numberOfLines = 0
+        
         datePickerTapped(datePicker) //  화면이 떴을때 이 기능을 미리 세팅해줘
     }
+    
+    func configureNavigationItem() {
+        let menu = UIBarButtonItem(
+            image: UIImage(systemName: "heart.fill"),
+            style: .plain,
+            target: self,
+            action: #selector(starButtonClicked))
+        
+        let profile = UIBarButtonItem(
+            title: "프로필",
+            style: .plain,
+            target: self,
+            action: #selector(profileButtonClicked))
+        
+        navigationItem.title = "땡키 계산기"
+        navigationItem.leftBarButtonItems = [menu, profile]
+    }
+    
     func configureDatePicker() {
         datePicker.datePickerMode = .date
         datePicker.preferredDatePickerStyle = .inline
     }
     
+    // @objc = swift 로 작성하였지만, objc 로 변경해주는 호환작업
+    @objc func starButtonClicked() {
+        print(#function) // -> 함수의 이름이 출력되게 됨
+    }
+    
+    @objc func profileButtonClicked() {
+        print(#function) // -> 함수의 이름이 출력되게 됨
+    }
     // DatePicker
     // ------------------------
     // DateFormat: 영국 표준시 기준

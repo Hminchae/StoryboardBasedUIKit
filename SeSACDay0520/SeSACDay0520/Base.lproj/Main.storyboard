@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Op-UY-Fxc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vci-rK-fni">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -246,7 +246,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="zkV-Oh-dVY">
-                                <rect key="frame" x="0.0" y="59" width="393" height="320"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zkV-Oh-dVY" secondAttribute="height" multiplier="393:320" id="isZ-m4-vfJ"/>
                                 </constraints>
@@ -255,28 +255,28 @@
                                 </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPW-xS-sZ2">
-                                <rect key="frame" x="30" y="409" width="151.66666666666666" height="174.66666666666663"/>
+                                <rect key="frame" x="30" y="453.00000000000006" width="151.66666666666666" height="152.66666666666669"/>
                                 <color key="backgroundColor" red="0.24172281079999999" green="0.61647796629999996" blue="0.025072488989999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhh-JV-hAX">
-                                <rect key="frame" x="211.66666666666663" y="409" width="151.33333333333337" height="174.66666666666663"/>
+                                <rect key="frame" x="211.66666666666663" y="453.00000000000006" width="151.33333333333337" height="152.66666666666669"/>
                                 <color key="backgroundColor" red="0.24172281079999999" green="0.61647796629999996" blue="0.025072488989999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GA-7o-tI5">
-                                <rect key="frame" x="30" y="613.66666666666663" width="151.66666666666666" height="174.33333333333337"/>
+                                <rect key="frame" x="30" y="635.66666666666663" width="151.66666666666666" height="152.33333333333337"/>
                                 <color key="backgroundColor" red="0.24172281079999999" green="0.61647796629999996" blue="0.025072488989999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dai-52-KjY">
-                                <rect key="frame" x="211.66666666666663" y="613.66666666666663" width="151.33333333333337" height="174.33333333333337"/>
+                                <rect key="frame" x="211.66666666666663" y="635.66666666666663" width="151.33333333333337" height="152.33333333333337"/>
                                 <color key="backgroundColor" red="0.24172281079999999" green="0.61647796629999996" blue="0.025072488989999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -309,6 +309,7 @@
                             <constraint firstItem="lhh-JV-hAX" firstAttribute="width" secondItem="OPW-xS-sZ2" secondAttribute="width" id="zGN-Sx-gKi"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="H6g-g6-JDD"/>
                     <connections>
                         <outlet property="datePicker" destination="zkV-Oh-dVY" id="M4e-CM-iFI"/>
                         <outlet property="day100Label" destination="OPW-xS-sZ2" id="VXn-5i-h61"/>
@@ -318,6 +319,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZtS-zn-jGv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.37404580152668" y="1382.3943661971832"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7m5-El-TKh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vci-rK-fni" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tmx-0Q-3J8">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Op-UY-Fxc" kind="relationship" relationship="rootViewController" id="7Fi-sz-I5b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IX3-IF-tHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5.343511450381679" y="1382.3943661971832"/>
         </scene>
