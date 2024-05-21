@@ -55,7 +55,30 @@ class DateViewController: UIViewController {
     }
     
     @objc func profileButtonClicked() {
-        print(#function) // -> 함수의 이름이 출력되게 됨
+        // 1.
+        let alert = UIAlertController(
+            title: nil,
+            message: nil,
+            preferredStyle: .actionSheet)
+        
+        // 2.
+        let open = UIAlertAction(
+            title: "열기",
+            style: .default)
+        let delete = UIAlertAction(
+            title: "삭제",
+            style: .destructive)
+        let cancel = UIAlertAction(
+            title: "취소",
+            style: .cancel)
+        
+        // 3.
+        alert.addAction(cancel)
+        alert.addAction(delete)
+        alert.addAction(open)
+        
+        // 4.
+        present(alert, animated: true)
     }
     // DatePicker
     // ------------------------
