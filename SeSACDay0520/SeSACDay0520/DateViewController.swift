@@ -40,11 +40,21 @@ class DateViewController: UIViewController {
             target: self,
             action: #selector(profileButtonClicked))
         
-        navigationItem.title = "땡키 계산기"
+        navigationItem.title = randomTitle()
         navigationItem.leftBarButtonItems = [menu, profile]
     }
     
-    func configureDatePicker() {
+    @discardableResult // return 값 안 쓸 수도 있을 때! 굳이 워딩을 띄우지 않도록 하는 atributer
+    func randomTitle() -> String { // 매개변수는 없지만 반환값은 있는 함수
+        let list = ["고래밥", "칙촉", "꼬물탱", "카스타드"]
+        let random = list.randomElement()!
+        let result = "\(random) 계산기"
+        print(#function)
+        return result
+        // return 이후의 코드는 실행되지 않음
+    }
+    
+    func configureDatePicker() { // 매개변수는 없지만 반환값도 없는 함수
         datePicker.datePickerMode = .date
         datePicker.preferredDatePickerStyle = .inline
     }
@@ -52,6 +62,9 @@ class DateViewController: UIViewController {
     // @objc = swift 로 작성하였지만, objc 로 변경해주는 호환작업
     @objc func starButtonClicked() {
         print(#function) // -> 함수의 이름이 출력되게 됨
+        
+        let picker = UIColorPickerViewController()
+        present(picker, animated: true)
     }
     
     @objc func profileButtonClicked() {
@@ -86,12 +99,11 @@ class DateViewController: UIViewController {
     // 1) 시간대 2) 표기
     // yyyy MM dd mm ss a:오전오후 EEEE:요일
     // YY와 yy는 다르다.
-    @IBAction func datePickerTapped(_ sender: UIDatePicker) {
+    @IBAction func datePickerTapped(_ sender: UIDatePicker) { // 매개변수는 있지만 반환값도 없는 함수
         print(datePicker.date)
         let format = DateFormatter()
         format.dateFormat = "yyyy/M/d/a/E"
         // 24년 5월 1일 : yy년 M월 d일
         day100Label.text = format.string(from: sender.date)
     }
-    
 }
