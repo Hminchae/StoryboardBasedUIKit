@@ -9,7 +9,6 @@ import UIKit
 
 class CalculateViewController: UIViewController {
 
-    
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
