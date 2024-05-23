@@ -15,6 +15,7 @@
 		B17C0F472BFF88C5007EEDE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17C0F452BFF88C5007EEDE4 /* LaunchScreen.storyboard */; };
 		B17C0F512BFF89D4007EEDE4 /* Case2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C0F502BFF89D4007EEDE4 /* Case2TableViewController.swift */; };
 		B17C0F532BFF89DC007EEDE4 /* Case3TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C0F522BFF89DC007EEDE4 /* Case3TableViewController.swift */; };
+		B1C5D85A2BFFCAF0006F28FD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C5D8592BFFCAF0006F28FD /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B17C0F482BFF88C5007EEDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B17C0F502BFF89D4007EEDE4 /* Case2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case2TableViewController.swift; sourceTree = "<group>"; };
 		B17C0F522BFF89DC007EEDE4 /* Case3TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case3TableViewController.swift; sourceTree = "<group>"; };
+		B1C5D8592BFFCAF0006F28FD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				B17C0F3E2BFF88C3007EEDE4 /* ViewController.swift */,
 				B17C0F502BFF89D4007EEDE4 /* Case2TableViewController.swift */,
 				B17C0F522BFF89DC007EEDE4 /* Case3TableViewController.swift */,
+				B1C5D8592BFFCAF0006F28FD /* TableViewCell.swift */,
 				B17C0F402BFF88C3007EEDE4 /* Main.storyboard */,
 				B17C0F432BFF88C5007EEDE4 /* Assets.xcassets */,
 				B17C0F452BFF88C5007EEDE4 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				B17C0F3F2BFF88C3007EEDE4 /* ViewController.swift in Sources */,
 				B17C0F3B2BFF88C3007EEDE4 /* AppDelegate.swift in Sources */,
 				B17C0F512BFF89D4007EEDE4 /* Case2TableViewController.swift in Sources */,
+				B1C5D85A2BFFCAF0006F28FD /* TableViewCell.swift in Sources */,
 				B17C0F3D2BFF88C3007EEDE4 /* SceneDelegate.swift in Sources */,
 				B17C0F532BFF89DC007EEDE4 /* Case3TableViewController.swift in Sources */,
 			);
