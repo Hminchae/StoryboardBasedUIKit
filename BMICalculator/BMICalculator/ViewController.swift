@@ -54,19 +54,20 @@ class ViewController: UIViewController {
         eyeButton.setImage(UIImage(systemName: "eye"), for: .normal)
         
     }
+    // 우상단 네비게이션 아이템 세팅
     func configureNavigationItem() {
         let profile = UIBarButtonItem(
-            image: UIImage(systemName: "person.fill")?.withTintColor(.purple),
+            image: UIImage(systemName: "person.fill"),
             style: .plain,
             target: self,
             action: #selector(profileButtonClicked))
         
-       // navigationItem.title = "땡키 계산기"
         navigationItem.rightBarButtonItem = profile
     }
+    
     @objc
+    // 우상단 네비게이션 아이템 액션 세팅
     func profileButtonClicked() {
-        // 우상단 네비게이션 아이템 세팅
         let alert = UIAlertController(
             title: "닉네임 설정",
             message: nil,
@@ -91,6 +92,5 @@ class ViewController: UIViewController {
         
         present(alert, animated: true)
     }
-
 }
 
