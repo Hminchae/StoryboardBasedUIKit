@@ -1,0 +1,35 @@
+//
+//  ModalViewController.swift
+//  SeSAC0523
+//
+//  Created by 황민채 on 5/23/24.
+//
+
+import UIKit
+
+class ModalViewController: UIViewController {
+    
+    //----------------생명주기 확인----------------------
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("Modal \(#function)")
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("Modal \(#function)")
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("Modal \(#function)")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("Modal \(#function)")
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("Modal \(#function)")
+    }
+    //--------------------------------------------
+
+}

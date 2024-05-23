@@ -14,8 +14,34 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var hateButton: UIButton!
     @IBOutlet weak var likeButton: UIButton!
+    
+    var hateCount: Int = UserDefaults.standard.integer(forKey: "bigButton")
+    
+    //----------------생명주기 확인----------------------
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("Main \(#function)")
+        
+        let hate = UserDefaults.standard.integer(forKey: "bigButton")
+        
+        hateLabel.text = "싫어요 \(hate)"
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("Main \(#function)")
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("Main \(#function)")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("Main \(#function)")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Main \(#function)")
         likeButton.backgroundColor = .yellow
         hateButton.backgroundColor = .orange
         guard let like = UserDefaults.standard.string(forKey: "like") else {
@@ -24,8 +50,12 @@ class ViewController: UIViewController {
         }
         likeLabel.text = "좋아요 \(like)"
         likeLabel.textAlignment = .center
+        
+        let hate = UserDefaults.standard.integer(forKey: "bigButton")
+        
+        hateLabel.text = "싫어요 \(hate)"
     }
-
+    //--------------------------------------------
     @IBAction func likeButtonClicked(_ sender: UIButton) {
         //1. UserDefaults 에 저장된 데이터 가져오기
         let before = UserDefaults.standard.integer(forKey: "like")
@@ -41,6 +71,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func hateButtonClicked(_ sender: UIButton) {
+        let jack = "안녕하세요"
+        let den = ""
     }
 }
 
