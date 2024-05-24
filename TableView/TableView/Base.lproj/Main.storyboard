@@ -254,7 +254,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q2d-dD-bVk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Wy-KO-aQH">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -307,10 +307,10 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4X-oK-MhB">
-                                    <rect key="frame" x="16" y="8" width="288" height="62"/>
+                                    <rect key="frame" x="20" y="8" width="280" height="62"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TH-WB-yho">
-                                            <rect key="frame" x="218" y="10" width="60" height="42"/>
+                                            <rect key="frame" x="210" y="10" width="60" height="42"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="nv4-gB-eOz"/>
                                             </constraints>
@@ -321,7 +321,7 @@
                                             </connections>
                                         </button>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kXA-zN-aLX">
-                                            <rect key="frame" x="10" y="0.0" width="198" height="62"/>
+                                            <rect key="frame" x="10" y="0.0" width="190" height="62"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="45" id="9Vd-B8-q8I"/>
                                             </constraints>
@@ -344,9 +344,9 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="R4X-oK-MhB" secondAttribute="bottom" constant="8" id="L9L-TX-lJV"/>
-                                <constraint firstAttribute="trailing" secondItem="R4X-oK-MhB" secondAttribute="trailing" constant="16" id="O2B-ll-PjN"/>
+                                <constraint firstAttribute="trailing" secondItem="R4X-oK-MhB" secondAttribute="trailing" constant="20" id="O2B-ll-PjN"/>
                                 <constraint firstItem="R4X-oK-MhB" firstAttribute="top" secondItem="SRu-Hj-hCp" secondAttribute="top" constant="8" id="XhU-Ru-TM7"/>
-                                <constraint firstItem="R4X-oK-MhB" firstAttribute="leading" secondItem="SRu-Hj-hCp" secondAttribute="leading" constant="16" id="nh0-cp-Pi3"/>
+                                <constraint firstItem="R4X-oK-MhB" firstAttribute="leading" secondItem="SRu-Hj-hCp" secondAttribute="leading" constant="20" id="nh0-cp-Pi3"/>
                             </constraints>
                         </view>
                         <prototypes>

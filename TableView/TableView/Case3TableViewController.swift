@@ -74,6 +74,9 @@ class Case3TableViewController: UITableViewController {
             cell.textLabel?.font = .systemFont(ofSize: 13)
             cell.separatorInset.bottom = .greatestFiniteMagnitude
         
+        cell.checkButton.addTarget(self, action: #selector(checkButtonClicked), for: .touchUpInside)
+        cell.starButton.addTarget(self, action: #selector(starButtonClicked), for: .touchUpInside)
+        
         if todoList[indexPath.row].isComplete {
             cell.checkButton.setImage(UIImage(systemName: "checkmark.square.fill"), for: .normal)
         } else {
@@ -87,18 +90,37 @@ class Case3TableViewController: UITableViewController {
             cell.starButton.setImage(UIImage(systemName: "star"), for: .normal)
         }
         
+        cell.checkButton.tag = indexPath.row
+        cell.starButton.tag = indexPath.row
+        
         return cell
     }
     
     @IBAction func addButtonClicked(_ sender: UIButton) {
+        
         if let string = todoTextField.text {
             todoList.append(Todo(content: string, isComplete: false, isStar: false))
             todoTextField.text = ""
         }
-        print(todoList)
+
         tableView.reloadData()
     }
     
+    @objc func checkButtonClicked(sender: UIButton) {
+        let index = sender.tag
+        
+        todoList[index].isComplete.toggle()
+        
+        tableView.reloadData()
+    }
+    
+    @objc func starButtonClicked(sender: UIButton) {
+        let index = sender.tag
+        
+        todoList[index].isStar.toggle()
+        
+        tableView.reloadData()
+    }
 }
 
 
