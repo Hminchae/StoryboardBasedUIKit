@@ -26,13 +26,14 @@ class Case3TableViewController: UITableViewController {
     @IBOutlet weak var addTodoButton: UIButton!
     @IBOutlet weak var addTodoView: UIView!
     @IBOutlet weak var todoTextField: UITextField!
+    @IBOutlet weak var addTodoBorderView: UIView!
     
     override func viewDidLoad() {
         print(#function)
         super.viewDidLoad()
         
-        addTodoView.backgroundColor = #colorLiteral(red: 0.949019134, green: 0.9490200877, blue: 0.9705253243, alpha: 1)
-        addTodoView.layer.cornerRadius = 8
+        addTodoBorderView.backgroundColor = #colorLiteral(red: 0.949019134, green: 0.9490200877, blue: 0.9705253243, alpha: 1)
+        addTodoBorderView.layer.cornerRadius = 8
         
         todoTextField.placeholder = " 무엇을 구매하실 건가요?"
         todoTextField.borderStyle = .none
@@ -42,7 +43,6 @@ class Case3TableViewController: UITableViewController {
         addTodoButton.setTitle("추가", for: .normal)
         addTodoButton.tintColor = .black
         addTodoButton.layer.cornerRadius = 8
-        
         
     }
 
@@ -56,15 +56,19 @@ class Case3TableViewController: UITableViewController {
         print(#function)
         return 50
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(#function, indexPath)
         // 3-1. 어떤 셀을 쓸 지 결정
         // 재사용 메커니즘
+    
         let cell = tableView.dequeueReusableCell(withIdentifier: "case3", for: indexPath) as! TableViewCell
         cell.checkButton.tintColor = .black
         cell.starButton.tintColor = .black
         
+        cell.todolistCellView.backgroundColor = #colorLiteral(red: 0.949019134, green: 0.9490200877, blue: 0.9705253243, alpha: 1)
+        cell.todolistCellView.layer.cornerRadius = 8
+       
         cell.todoListLabel.text = todoList [indexPath.row].content
             cell.textLabel?.textColor = .label
             cell.textLabel?.font = .systemFont(ofSize: 13)
@@ -89,6 +93,7 @@ class Case3TableViewController: UITableViewController {
     @IBAction func addButtonClicked(_ sender: UIButton) {
         if let string = todoTextField.text {
             todoList.append(Todo(content: string, isComplete: false, isStar: false))
+            todoTextField.text = ""
         }
         print(todoList)
         tableView.reloadData()
