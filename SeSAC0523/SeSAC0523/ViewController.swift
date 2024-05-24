@@ -68,11 +68,5 @@ class ViewController: UIViewController {
         //5. 레이블에 표시하기
         likeLabel.text = "좋아요 \(final)"
     }
-    
-    
-    @IBAction func hateButtonClicked(_ sender: UIButton) {
-        let jack = "안녕하세요"
-        let den = ""
-    }
 }
 

@@ -8,16 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search-->
-        <scene sceneID="Tln-XG-k7M">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Search" id="cUO-br-ZeC" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="EVh-F0-p0V"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CwF-lO-o9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="886" y="-237"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -33,7 +23,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="cUO-br-ZeC" kind="show" id="HQI-tO-e6S"/>
+                                    <segue destination="3dp-oR-Azg" kind="show" id="KIt-cB-aJh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,6 +34,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="78.625954198473281" y="3.5211267605633805"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Tjf-Hp-fiJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="3dp-oR-Azg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="G0P-Nv-3e6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7u5-vg-y6m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792" y="-59"/>
         </scene>
     </scenes>
     <resources>
