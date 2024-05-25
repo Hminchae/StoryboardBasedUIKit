@@ -15,7 +15,6 @@
 		B18257A12C0228B0003926A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B182579F2C0228B0003926A7 /* LaunchScreen.storyboard */; };
 		B18257AA2C022AFC003926A7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257A82C022AFC003926A7 /* Restaurant.swift */; };
 		B18257AB2C022AFC003926A7 /* MagazineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257A92C022AFC003926A7 /* MagazineInfo.swift */; };
-		B18257AF2C022D4B003926A7 /* SearchRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257AE2C022D4B003926A7 /* SearchRestaurantViewController.swift */; };
 		B18257B12C022D83003926A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18257B02C022D83003926A7 /* Home.storyboard */; };
 		B18257B32C022DB8003926A7 /* SearchRestaurant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18257B22C022DB8003926A7 /* SearchRestaurant.storyboard */; };
 		B18257B52C023BDF003926A7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257B42C023BDF003926A7 /* HomeTableViewController.swift */; };
@@ -30,6 +29,9 @@
 		B18257CD2C025A10003926A7 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257C42C025A10003926A7 /* Pretendard-SemiBold.otf */; };
 		B18257CE2C025A10003926A7 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257C52C025A10003926A7 /* Pretendard-Thin.otf */; };
 		B18257CF2C025A10003926A7 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257C62C025A10003926A7 /* Pretendard-Bold.otf */; };
+		B18257D12C0265CA003926A7 /* SearchRestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257D02C0265CA003926A7 /* SearchRestaurantTableViewCell.swift */; };
+		B18257D52C026E11003926A7 /* SearchRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257D42C026E11003926A7 /* SearchRestaurantViewController.swift */; };
+		B18257D72C0271BF003926A7 /* SearchRestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257D62C0271BF003926A7 /* SearchRestaurantTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +45,6 @@
 		B18257A22C0228B0003926A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B18257A82C022AFC003926A7 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		B18257A92C022AFC003926A7 /* MagazineInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineInfo.swift; sourceTree = "<group>"; };
-		B18257AE2C022D4B003926A7 /* SearchRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurantViewController.swift; sourceTree = "<group>"; };
 		B18257B02C022D83003926A7 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B18257B22C022DB8003926A7 /* SearchRestaurant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchRestaurant.storyboard; sourceTree = "<group>"; };
 		B18257B42C023BDF003926A7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +58,9 @@
 		B18257C42C025A10003926A7 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		B18257C52C025A10003926A7 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		B18257C62C025A10003926A7 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		B18257D02C0265CA003926A7 /* SearchRestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		B18257D42C026E11003926A7 /* SearchRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurantViewController.swift; sourceTree = "<group>"; };
+		B18257D62C0271BF003926A7 /* SearchRestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurantTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				B18257A82C022AFC003926A7 /* Restaurant.swift */,
-				B18257AE2C022D4B003926A7 /* SearchRestaurantViewController.swift */,
+				B18257D42C026E11003926A7 /* SearchRestaurantViewController.swift */,
+				B18257D02C0265CA003926A7 /* SearchRestaurantTableViewCell.swift */,
+				B18257D62C0271BF003926A7 /* SearchRestaurantTableViewController.swift */,
 				B18257B22C022DB8003926A7 /* SearchRestaurant.storyboard */,
 			);
 			path = SearchRestaurant;
@@ -229,11 +235,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18257D72C0271BF003926A7 /* SearchRestaurantTableViewController.swift in Sources */,
 				B18257B52C023BDF003926A7 /* HomeTableViewController.swift in Sources */,
 				B18257AA2C022AFC003926A7 /* Restaurant.swift in Sources */,
-				B18257AF2C022D4B003926A7 /* SearchRestaurantViewController.swift in Sources */,
+				B18257D52C026E11003926A7 /* SearchRestaurantViewController.swift in Sources */,
 				B18257992C0228AE003926A7 /* ViewController.swift in Sources */,
 				B18257952C0228AE003926A7 /* AppDelegate.swift in Sources */,
+				B18257D12C0265CA003926A7 /* SearchRestaurantTableViewCell.swift in Sources */,
 				B18257972C0228AE003926A7 /* SceneDelegate.swift in Sources */,
 				B18257B72C023C5B003926A7 /* HomeTableViewCell.swift in Sources */,
 				B18257AB2C022AFC003926A7 /* MagazineInfo.swift in Sources */,

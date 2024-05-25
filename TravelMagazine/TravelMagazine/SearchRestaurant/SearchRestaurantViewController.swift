@@ -2,16 +2,17 @@
 //  SearchRestaurantViewController.swift
 //  TravelMagazine
 //
-//  Created by 황민채 on 5/25/24.
+//  Created by 황민채 on 5/26/24.
 //
 
 import UIKit
 
 class SearchRestaurantViewController: UIViewController {
-
+    @IBOutlet weak var storeListButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        storeListButton.setImage(UIImage(named: "foodButton"), for: .normal)
         // Do any additional setup after loading the view.
     }
     
