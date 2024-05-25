@@ -15,10 +15,21 @@
 		B18257A12C0228B0003926A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B182579F2C0228B0003926A7 /* LaunchScreen.storyboard */; };
 		B18257AA2C022AFC003926A7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257A82C022AFC003926A7 /* Restaurant.swift */; };
 		B18257AB2C022AFC003926A7 /* MagazineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257A92C022AFC003926A7 /* MagazineInfo.swift */; };
-		B18257AD2C022D19003926A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257AC2C022D19003926A7 /* HomeViewController.swift */; };
 		B18257AF2C022D4B003926A7 /* SearchRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257AE2C022D4B003926A7 /* SearchRestaurantViewController.swift */; };
 		B18257B12C022D83003926A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18257B02C022D83003926A7 /* Home.storyboard */; };
 		B18257B32C022DB8003926A7 /* SearchRestaurant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18257B22C022DB8003926A7 /* SearchRestaurant.storyboard */; };
+		B18257B52C023BDF003926A7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257B42C023BDF003926A7 /* HomeTableViewController.swift */; };
+		B18257B72C023C5B003926A7 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257B62C023C5B003926A7 /* HomeTableViewCell.swift */; };
+		B18257BA2C02434E003926A7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B18257B92C02434E003926A7 /* Kingfisher */; };
+		B18257C72C025A10003926A7 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257BE2C025A0F003926A7 /* Pretendard-Regular.otf */; };
+		B18257C82C025A10003926A7 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257BF2C025A0F003926A7 /* Pretendard-ExtraLight.otf */; };
+		B18257C92C025A10003926A7 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257C02C025A0F003926A7 /* Pretendard-ExtraBold.otf */; };
+		B18257CA2C025A10003926A7 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257C12C025A10003926A7 /* Pretendard-Black.otf */; };
+		B18257CB2C025A10003926A7 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257C22C025A10003926A7 /* Pretendard-Light.otf */; };
+		B18257CC2C025A10003926A7 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257C32C025A10003926A7 /* Pretendard-Medium.otf */; };
+		B18257CD2C025A10003926A7 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257C42C025A10003926A7 /* Pretendard-SemiBold.otf */; };
+		B18257CE2C025A10003926A7 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257C52C025A10003926A7 /* Pretendard-Thin.otf */; };
+		B18257CF2C025A10003926A7 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B18257C62C025A10003926A7 /* Pretendard-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +43,20 @@
 		B18257A22C0228B0003926A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B18257A82C022AFC003926A7 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		B18257A92C022AFC003926A7 /* MagazineInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineInfo.swift; sourceTree = "<group>"; };
-		B18257AC2C022D19003926A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B18257AE2C022D4B003926A7 /* SearchRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurantViewController.swift; sourceTree = "<group>"; };
 		B18257B02C022D83003926A7 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B18257B22C022DB8003926A7 /* SearchRestaurant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchRestaurant.storyboard; sourceTree = "<group>"; };
+		B18257B42C023BDF003926A7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		B18257B62C023C5B003926A7 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		B18257BE2C025A0F003926A7 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		B18257BF2C025A0F003926A7 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		B18257C02C025A0F003926A7 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		B18257C12C025A10003926A7 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		B18257C22C025A10003926A7 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		B18257C32C025A10003926A7 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		B18257C42C025A10003926A7 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		B18257C52C025A10003926A7 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		B18257C62C025A10003926A7 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18257BA2C02434E003926A7 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,21 +90,55 @@
 		B18257932C0228AE003926A7 /* TravelMagazine */ = {
 			isa = PBXGroup;
 			children = (
+				B182579F2C0228B0003926A7 /* LaunchScreen.storyboard */,
+				B182579A2C0228AE003926A7 /* Main.storyboard */,
 				B18257942C0228AE003926A7 /* AppDelegate.swift */,
 				B18257962C0228AE003926A7 /* SceneDelegate.swift */,
 				B18257982C0228AE003926A7 /* ViewController.swift */,
-				B18257A92C022AFC003926A7 /* MagazineInfo.swift */,
-				B18257A82C022AFC003926A7 /* Restaurant.swift */,
-				B182579A2C0228AE003926A7 /* Main.storyboard */,
-				B18257AC2C022D19003926A7 /* HomeViewController.swift */,
-				B18257B02C022D83003926A7 /* Home.storyboard */,
-				B18257AE2C022D4B003926A7 /* SearchRestaurantViewController.swift */,
-				B18257B22C022DB8003926A7 /* SearchRestaurant.storyboard */,
+				B18257BD2C025A01003926A7 /* Font */,
 				B182579D2C0228B0003926A7 /* Assets.xcassets */,
-				B182579F2C0228B0003926A7 /* LaunchScreen.storyboard */,
 				B18257A22C0228B0003926A7 /* Info.plist */,
+				B18257BC2C02599F003926A7 /* SearchRestaurant */,
+				B18257BB2C025983003926A7 /* Home */,
 			);
 			path = TravelMagazine;
+			sourceTree = "<group>";
+		};
+		B18257BB2C025983003926A7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B18257A92C022AFC003926A7 /* MagazineInfo.swift */,
+				B18257B42C023BDF003926A7 /* HomeTableViewController.swift */,
+				B18257B62C023C5B003926A7 /* HomeTableViewCell.swift */,
+				B18257B02C022D83003926A7 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B18257BC2C02599F003926A7 /* SearchRestaurant */ = {
+			isa = PBXGroup;
+			children = (
+				B18257A82C022AFC003926A7 /* Restaurant.swift */,
+				B18257AE2C022D4B003926A7 /* SearchRestaurantViewController.swift */,
+				B18257B22C022DB8003926A7 /* SearchRestaurant.storyboard */,
+			);
+			path = SearchRestaurant;
+			sourceTree = "<group>";
+		};
+		B18257BD2C025A01003926A7 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B18257C12C025A10003926A7 /* Pretendard-Black.otf */,
+				B18257C62C025A10003926A7 /* Pretendard-Bold.otf */,
+				B18257C02C025A0F003926A7 /* Pretendard-ExtraBold.otf */,
+				B18257BF2C025A0F003926A7 /* Pretendard-ExtraLight.otf */,
+				B18257C22C025A10003926A7 /* Pretendard-Light.otf */,
+				B18257C32C025A10003926A7 /* Pretendard-Medium.otf */,
+				B18257BE2C025A0F003926A7 /* Pretendard-Regular.otf */,
+				B18257C42C025A10003926A7 /* Pretendard-SemiBold.otf */,
+				B18257C52C025A10003926A7 /* Pretendard-Thin.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +157,9 @@
 			dependencies = (
 			);
 			name = TravelMagazine;
+			packageProductDependencies = (
+				B18257B92C02434E003926A7 /* Kingfisher */,
+			);
 			productName = TravelMagazine;
 			productReference = B18257912C0228AE003926A7 /* TravelMagazine.app */;
 			productType = "com.apple.product-type.application";
@@ -129,6 +188,9 @@
 				Base,
 			);
 			mainGroup = B18257882C0228AE003926A7;
+			packageReferences = (
+				B18257B82C02434E003926A7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = B18257922C0228AE003926A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,11 +205,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18257C82C025A10003926A7 /* Pretendard-ExtraLight.otf in Resources */,
 				B18257A12C0228B0003926A7 /* LaunchScreen.storyboard in Resources */,
+				B18257C92C025A10003926A7 /* Pretendard-ExtraBold.otf in Resources */,
+				B18257CD2C025A10003926A7 /* Pretendard-SemiBold.otf in Resources */,
+				B18257CB2C025A10003926A7 /* Pretendard-Light.otf in Resources */,
+				B18257C72C025A10003926A7 /* Pretendard-Regular.otf in Resources */,
+				B18257CA2C025A10003926A7 /* Pretendard-Black.otf in Resources */,
 				B182579E2C0228B0003926A7 /* Assets.xcassets in Resources */,
 				B18257B32C022DB8003926A7 /* SearchRestaurant.storyboard in Resources */,
+				B18257CF2C025A10003926A7 /* Pretendard-Bold.otf in Resources */,
 				B182579C2C0228AE003926A7 /* Main.storyboard in Resources */,
+				B18257CE2C025A10003926A7 /* Pretendard-Thin.otf in Resources */,
 				B18257B12C022D83003926A7 /* Home.storyboard in Resources */,
+				B18257CC2C025A10003926A7 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,12 +229,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18257B52C023BDF003926A7 /* HomeTableViewController.swift in Sources */,
 				B18257AA2C022AFC003926A7 /* Restaurant.swift in Sources */,
 				B18257AF2C022D4B003926A7 /* SearchRestaurantViewController.swift in Sources */,
 				B18257992C0228AE003926A7 /* ViewController.swift in Sources */,
 				B18257952C0228AE003926A7 /* AppDelegate.swift in Sources */,
-				B18257AD2C022D19003926A7 /* HomeViewController.swift in Sources */,
 				B18257972C0228AE003926A7 /* SceneDelegate.swift in Sources */,
+				B18257B72C023C5B003926A7 /* HomeTableViewCell.swift in Sources */,
 				B18257AB2C022AFC003926A7 /* MagazineInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B18257B82C02434E003926A7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B18257B92C02434E003926A7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B18257B82C02434E003926A7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B18257892C0228AE003926A7 /* Project object */;
 }
