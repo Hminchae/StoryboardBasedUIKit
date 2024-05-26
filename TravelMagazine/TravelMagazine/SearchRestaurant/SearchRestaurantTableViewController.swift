@@ -64,7 +64,7 @@ class SearchRestaurantTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         print(#function)
-        return 180
+        return 170
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -80,7 +80,7 @@ class SearchRestaurantTableViewController: UITableViewController {
         
         // 음식점 명
         cell.storeTitle.text = store.name
-        cell.storeTitle.font = UIFont(name: "Pretendard-SemiBold", size: 18)
+        cell.storeTitle.font = UIFont(name: "Pretendard-SemiBold", size: 16)
         
         // 주소 버튼 클릭 시
         cell.addressButton.addTarget(self, action: #selector(addressButtonClicked), for: .touchUpInside)
