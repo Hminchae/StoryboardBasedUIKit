@@ -13,6 +13,7 @@ class SearchRestaurantTableViewController: UITableViewController {
     
     @IBOutlet weak var searchTextfieldView: UIView!
     @IBOutlet weak var searchTextfield: UITextField!
+    @IBOutlet weak var searchTextfieldButton: UIButton!
     
     @IBOutlet weak var storeCategory1: UIButton!
     @IBOutlet weak var storeCategory2: UIButton!
@@ -25,6 +26,7 @@ class SearchRestaurantTableViewController: UITableViewController {
     var closeOrBookmarkState: Bool = true
     
     var restaurantInfo: [Restaurant] = RestaurantList().restaurantArray
+    let tempArray: [Restaurant] = RestaurantList().restaurantArray // 임시 배열
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +39,9 @@ class SearchRestaurantTableViewController: UITableViewController {
         searchTextfield.placeholder = "검색"
         searchTextfield.borderStyle = .none
         
+        searchTextfieldButton.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
+        searchTextfieldButton.setTitle("", for: .normal)
+        searchTextfieldButton.tintColor = .darkGray
         designCategoryButton(categoryButtonName: storeCategory1, "한식")
         designCategoryButton(categoryButtonName: storeCategory2, "카페")
         designCategoryButton(categoryButtonName: storeCategory3, "중식")
@@ -51,17 +56,17 @@ class SearchRestaurantTableViewController: UITableViewController {
         tableView.indicatorStyle = .white
         
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return restaurantInfo.count
     }
-
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         print(#function)
         return 180
     }
-   
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let store = restaurantInfo[indexPath.row]
@@ -77,16 +82,13 @@ class SearchRestaurantTableViewController: UITableViewController {
         cell.storeTitle.text = store.name
         cell.storeTitle.font = UIFont(name: "Pretendard-SemiBold", size: 18)
         
-//        // 음식점 주소
-//        cell.storeAddress.text = store.address
-//        cell.storeAddress.font = UIFont(name: "Pretendard-Medium", size: 13)
-//        cell.storeAddress.numberOfLines = 0
-//        cell.storeAddress.textColor = .darkGray
-//        
-//        // 음식점 전화번호
-//        cell.storeNumber.text = "☎ \(String(store.phoneNumber))"
-//        cell.storeNumber.font = UIFont(name: "Pretendard-Medium", size: 11)
-//        cell.storeNumber.textColor = .darkGray
+        // 주소 버튼 클릭 시
+        cell.addressButton.addTarget(self, action: #selector(addressButtonClicked), for: .touchUpInside)
+        cell.addressButton.tag = indexPath.row
+        
+        // 전화 버튼 클릭 시
+        cell.numberButton.addTarget(self, action: #selector(numberButtonClicked), for: .touchUpInside)
+        cell.numberButton.tag = indexPath.row
         
         // 음식점 카테고리 & 가격
         cell.storeCategory.text = "\(store.category)﹒대표메뉴 가격: \(String(store.price))원"
@@ -114,6 +116,31 @@ class SearchRestaurantTableViewController: UITableViewController {
         return cell
     }
     
+    // 주소 & 전화 버튼 클릭 시 알럿
+    func showAlert(messageStr: String, kind: String) {
+        let alert = UIAlertController(title: kind, message: messageStr, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+        
+        alert.addAction(okAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    // 주소 버튼 클릭 시
+    @objc func addressButtonClicked(sender: UIButton) {
+        let index = sender.tag
+        // print(restaurantInfo[index].address)
+        showAlert(messageStr: restaurantInfo[index].address, kind: "주소")
+    }
+    
+    // 전화 버튼 클릭 시
+    @objc func numberButtonClicked(sender: UIButton) {
+        let index = sender.tag
+        // print(restaurantInfo[index].address)
+        showAlert(messageStr: restaurantInfo[index].phoneNumber, kind: "전화번호")
+    }
+    // 북마크 버튼 클릭시 색 변경 함수
     @objc func bookMarkButtonClicked(sender: UIButton) {
         let index = sender.tag
         
@@ -122,6 +149,7 @@ class SearchRestaurantTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    // 카테고리 검색 버튼 디자인 함수
     func designCategoryButton(categoryButtonName button: UIButton, _ categoryName: String) {
         button.setTitle(categoryName, for: .normal)
         button.titleLabel?.font = UIFont(name: "Pretendard-Medium", size: 13)
@@ -131,12 +159,88 @@ class SearchRestaurantTableViewController: UITableViewController {
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.darkGray.cgColor
     }
+    
+    // 통합 검색 함수
+    func searchRestaurant(target: String) {
+        var newInfoArray: [Restaurant] = []
+        
+        // 카테고리 검색
+        for i in restaurantInfo {
+            if i.category == target {
+                newInfoArray.append(i)
+            }
+        }
+        
+        // 가게명 검색
+        for i in restaurantInfo {
+            if i.name.hasPrefix(target) {
+                newInfoArray.append(i)
+            }
+        }
+        restaurantInfo = newInfoArray
+        tableView.reloadData()
+    }
+    
+    // 기타 검색 함수
+    private func searchEtcRestaurant() {
+        var newInfoArray: [Restaurant] = []
+        
+        // 카테고리 검색
+        for i in restaurantInfo {
+            if i.category == "분식" {
+                newInfoArray.append(i)
+            } else if i.category == "일식" {
+                newInfoArray.append(i)
+            } else if i.category == "경양식" {
+                newInfoArray.append(i)
+            } else if i.category == "양식" {
+                newInfoArray.append(i)
+            }
+        }
+        
+        restaurantInfo = newInfoArray
+        tableView.reloadData()
+    }
+    
+    // 카테고리 검색 중 한식 버튼
+    @IBAction func koreaFoodButtonClicked(_ sender: UIButton) {
+        restaurantInfo = tempArray
+        searchRestaurant(target: "한식")
+    }
+    
+    // 카테고리 검색 중 카페 버튼
+    @IBAction func cafeButtonClicked(_ sender: UIButton) {
+        restaurantInfo = tempArray
+        searchRestaurant(target: "카페")
+    }
+    
+    // 카테고리 검색 중 중식 버튼
+    @IBAction func chinaFoodButtonClicked(_ sender: UIButton) {
+        restaurantInfo = tempArray
+        searchRestaurant(target: "중식")
+    }
+    
+    // 카테고리 검색 중 기타 버튼
+    @IBAction func etcFoodButtonClicked(_ sender: UIButton) {
+        restaurantInfo = tempArray
+        searchEtcRestaurant()
+    }
+    
+    // 검색창 돋보기 버튼
+    @IBAction func searchButtonClicked(_ sender: UIButton) {
+        if let text = searchTextfield.text {
+            searchRestaurant(target: text)
+        }
+    }
+    
+    // 가까운 매장 버튼
     @IBAction func closeStoreButtonClicked(_ sender: UIButton) {
         closeOrBookmarkState = true
         closeStoreSortButton.tintColor = .label
         bookmarkStoreButton.tintColor = .darkGray
     }
     
+    // 저장한 매장 버튼
     @IBAction func bookmarkStoreButtonClicked(_ sender: UIButton) {
         closeOrBookmarkState = false
         closeStoreSortButton.tintColor = .darkGray
