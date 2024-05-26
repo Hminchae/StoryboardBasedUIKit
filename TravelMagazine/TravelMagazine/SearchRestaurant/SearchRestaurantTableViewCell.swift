@@ -11,11 +11,11 @@ class SearchRestaurantTableViewCell: UITableViewCell {
     @IBOutlet weak var storeImage: UIImageView!
     
     @IBOutlet weak var storeTitle: UILabel!
-    @IBOutlet weak var storeAddress: UILabel!
     @IBOutlet weak var storeCategory: UILabel!
-    @IBOutlet weak var storePrice: UILabel!
     @IBOutlet weak var storeStarButton: UIButton!
-    @IBOutlet weak var storeNumber: UILabel!
+    
+    @IBOutlet weak var numberButton: UIButton!
+    @IBOutlet weak var addressButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
