@@ -13,6 +13,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nDu-iw-Qqr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HIS-7f-Vto">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <tabBarAppearance key="scrollEdgeAppearance"/>
@@ -20,6 +21,7 @@
                     <connections>
                         <segue destination="PdH-p3-psp" kind="relationship" relationship="viewControllers" id="h58-LM-7sa"/>
                         <segue destination="3Bq-4T-Dqa" kind="relationship" relationship="viewControllers" id="VuU-Ei-lyh"/>
+                        <segue destination="iN6-4C-fwi" kind="relationship" relationship="viewControllers" id="0Br-fK-2Da"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUa-Zv-OUo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -35,6 +37,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6YB-pA-O0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832" y="-108"/>
+        </scene>
+        <!--CityInfo-->
+        <scene sceneID="Vnh-e2-3jc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CityInfo" id="iN6-4C-fwi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="WZa-iA-0zJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2r-Db-MEU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="-4"/>
         </scene>
         <!--SearchRestaurant-->
         <scene sceneID="gkO-wt-t8h">

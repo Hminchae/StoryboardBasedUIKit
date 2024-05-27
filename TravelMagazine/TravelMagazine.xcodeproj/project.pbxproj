@@ -33,6 +33,17 @@
 		B18257D52C026E11003926A7 /* SearchRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257D42C026E11003926A7 /* SearchRestaurantViewController.swift */; };
 		B18257D72C0271BF003926A7 /* SearchRestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257D62C0271BF003926A7 /* SearchRestaurantTableViewController.swift */; };
 		B189AAE62C045D7C008A11D9 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAE52C045D7C008A11D9 /* TravelModel.swift */; };
+		B189AAE82C0461CB008A11D9 /* CityInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B189AAE72C0461CB008A11D9 /* CityInfo.storyboard */; };
+		B189AAEB2C046285008A11D9 /* CityInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAEA2C046285008A11D9 /* CityInfoViewController.swift */; };
+		B189AAEE2C046383008A11D9 /* CityInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAEC2C046383008A11D9 /* CityInfoTableViewCell.swift */; };
+		B189AAEF2C046383008A11D9 /* CityInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B189AAED2C046383008A11D9 /* CityInfoTableViewCell.xib */; };
+		B189AAF22C04638F008A11D9 /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAF02C04638F008A11D9 /* AdTableViewCell.swift */; };
+		B189AAF32C04638F008A11D9 /* AdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B189AAF12C04638F008A11D9 /* AdTableViewCell.xib */; };
+		B189AAF62C0463D5008A11D9 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = B189AAF52C0463D5008A11D9 /* Cosmos */; };
+		B189AAF82C046E19008A11D9 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAF72C046E19008A11D9 /* UILabel+Extension.swift */; };
+		B189AAFA2C047448008A11D9 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAF92C047448008A11D9 /* UIImageView+Extension.swift */; };
+		B189AAFC2C048B32008A11D9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAFB2C048B32008A11D9 /* UIView+Extension.swift */; };
+		B189AAFE2C048BE8008A11D9 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAFD2C048BE8008A11D9 /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +74,16 @@
 		B18257D42C026E11003926A7 /* SearchRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurantViewController.swift; sourceTree = "<group>"; };
 		B18257D62C0271BF003926A7 /* SearchRestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurantTableViewController.swift; sourceTree = "<group>"; };
 		B189AAE52C045D7C008A11D9 /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		B189AAE72C0461CB008A11D9 /* CityInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CityInfo.storyboard; sourceTree = "<group>"; };
+		B189AAEA2C046285008A11D9 /* CityInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInfoViewController.swift; sourceTree = "<group>"; };
+		B189AAEC2C046383008A11D9 /* CityInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInfoTableViewCell.swift; sourceTree = "<group>"; };
+		B189AAED2C046383008A11D9 /* CityInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityInfoTableViewCell.xib; sourceTree = "<group>"; };
+		B189AAF02C04638F008A11D9 /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewCell.swift; sourceTree = "<group>"; };
+		B189AAF12C04638F008A11D9 /* AdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdTableViewCell.xib; sourceTree = "<group>"; };
+		B189AAF72C046E19008A11D9 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		B189AAF92C047448008A11D9 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		B189AAFB2C048B32008A11D9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B189AAFD2C048BE8008A11D9 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B189AAF62C0463D5008A11D9 /* Cosmos in Frameworks */,
 				B18257BA2C02434E003926A7 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,15 +119,15 @@
 			isa = PBXGroup;
 			children = (
 				B182579F2C0228B0003926A7 /* LaunchScreen.storyboard */,
-				B189AAE52C045D7C008A11D9 /* TravelModel.swift */,
 				B182579A2C0228AE003926A7 /* Main.storyboard */,
 				B18257942C0228AE003926A7 /* AppDelegate.swift */,
 				B18257962C0228AE003926A7 /* SceneDelegate.swift */,
 				B18257982C0228AE003926A7 /* ViewController.swift */,
-				B18257BD2C025A01003926A7 /* Font */,
 				B182579D2C0228B0003926A7 /* Assets.xcassets */,
 				B18257A22C0228B0003926A7 /* Info.plist */,
+				B189AAE92C046255008A11D9 /* CityInfo */,
 				B18257BC2C02599F003926A7 /* SearchRestaurant */,
+				B18257BD2C025A01003926A7 /* Font */,
 				B18257BB2C025983003926A7 /* Home */,
 			);
 			path = TravelMagazine;
@@ -150,6 +172,24 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		B189AAE92C046255008A11D9 /* CityInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B189AAE52C045D7C008A11D9 /* TravelModel.swift */,
+				B189AAE72C0461CB008A11D9 /* CityInfo.storyboard */,
+				B189AAED2C046383008A11D9 /* CityInfoTableViewCell.xib */,
+				B189AAF12C04638F008A11D9 /* AdTableViewCell.xib */,
+				B189AAEA2C046285008A11D9 /* CityInfoViewController.swift */,
+				B189AAEC2C046383008A11D9 /* CityInfoTableViewCell.swift */,
+				B189AAF72C046E19008A11D9 /* UILabel+Extension.swift */,
+				B189AAFB2C048B32008A11D9 /* UIView+Extension.swift */,
+				B189AAFD2C048BE8008A11D9 /* UIButton+Extension.swift */,
+				B189AAF92C047448008A11D9 /* UIImageView+Extension.swift */,
+				B189AAF02C04638F008A11D9 /* AdTableViewCell.swift */,
+			);
+			path = CityInfo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -168,6 +208,7 @@
 			name = TravelMagazine;
 			packageProductDependencies = (
 				B18257B92C02434E003926A7 /* Kingfisher */,
+				B189AAF52C0463D5008A11D9 /* Cosmos */,
 			);
 			productName = TravelMagazine;
 			productReference = B18257912C0228AE003926A7 /* TravelMagazine.app */;
@@ -199,6 +240,7 @@
 			mainGroup = B18257882C0228AE003926A7;
 			packageReferences = (
 				B18257B82C02434E003926A7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B189AAF42C0463D5008A11D9 /* XCRemoteSwiftPackageReference "Cosmos" */,
 			);
 			productRefGroup = B18257922C0228AE003926A7 /* Products */;
 			projectDirPath = "";
@@ -216,6 +258,8 @@
 			files = (
 				B18257C82C025A10003926A7 /* Pretendard-ExtraLight.otf in Resources */,
 				B18257A12C0228B0003926A7 /* LaunchScreen.storyboard in Resources */,
+				B189AAEF2C046383008A11D9 /* CityInfoTableViewCell.xib in Resources */,
+				B189AAF32C04638F008A11D9 /* AdTableViewCell.xib in Resources */,
 				B18257C92C025A10003926A7 /* Pretendard-ExtraBold.otf in Resources */,
 				B18257CD2C025A10003926A7 /* Pretendard-SemiBold.otf in Resources */,
 				B18257CB2C025A10003926A7 /* Pretendard-Light.otf in Resources */,
@@ -228,6 +272,7 @@
 				B18257CE2C025A10003926A7 /* Pretendard-Thin.otf in Resources */,
 				B18257B12C022D83003926A7 /* Home.storyboard in Resources */,
 				B18257CC2C025A10003926A7 /* Pretendard-Medium.otf in Resources */,
+				B189AAE82C0461CB008A11D9 /* CityInfo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,15 +285,22 @@
 			files = (
 				B18257D72C0271BF003926A7 /* SearchRestaurantTableViewController.swift in Sources */,
 				B18257B52C023BDF003926A7 /* HomeTableViewController.swift in Sources */,
+				B189AAF82C046E19008A11D9 /* UILabel+Extension.swift in Sources */,
 				B18257AA2C022AFC003926A7 /* Restaurant.swift in Sources */,
 				B18257D52C026E11003926A7 /* SearchRestaurantViewController.swift in Sources */,
+				B189AAFE2C048BE8008A11D9 /* UIButton+Extension.swift in Sources */,
 				B18257992C0228AE003926A7 /* ViewController.swift in Sources */,
+				B189AAEE2C046383008A11D9 /* CityInfoTableViewCell.swift in Sources */,
+				B189AAFC2C048B32008A11D9 /* UIView+Extension.swift in Sources */,
+				B189AAF22C04638F008A11D9 /* AdTableViewCell.swift in Sources */,
 				B18257952C0228AE003926A7 /* AppDelegate.swift in Sources */,
 				B18257D12C0265CA003926A7 /* SearchRestaurantTableViewCell.swift in Sources */,
+				B189AAFA2C047448008A11D9 /* UIImageView+Extension.swift in Sources */,
 				B18257972C0228AE003926A7 /* SceneDelegate.swift in Sources */,
 				B18257B72C023C5B003926A7 /* HomeTableViewCell.swift in Sources */,
 				B189AAE62C045D7C008A11D9 /* TravelModel.swift in Sources */,
 				B18257AB2C022AFC003926A7 /* MagazineInfo.swift in Sources */,
+				B189AAEB2C046285008A11D9 /* CityInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +543,14 @@
 				minimumVersion = 7.11.0;
 			};
 		};
+		B189AAF42C0463D5008A11D9 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 25.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -498,6 +558,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B18257B82C02434E003926A7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		B189AAF52C0463D5008A11D9 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B189AAF42C0463D5008A11D9 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,6 +6,16 @@
 
 import Foundation
 
+struct Travel {
+    let title: String
+    let description: String?
+    let travel_image: String?
+    let grade: Double?
+    let save: Int?
+    var like: Bool?
+    let ad : Bool
+}
+
 struct TravelInfo {
     let travel: [Travel] = [
         Travel(title: "하나우마 베이",
