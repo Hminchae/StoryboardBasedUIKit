@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Modal-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeSAC0523" customModuleProvider="target" sceneMemberID="viewController">
@@ -212,7 +212,7 @@
                             <constraint firstItem="dey-KW-wLS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="Izg-Bd-z8g"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tbD-U9-O3q"/>
+                    <tabBarItem key="tabBarItem" title="Modal" image="square.and.arrow.up.fill" catalog="system" id="tbD-U9-O3q"/>
                     <connections>
                         <outlet property="hateButton" destination="Kuf-ZR-TZe" id="8my-lk-g0W"/>
                         <outlet property="hateLabel" destination="YA9-k8-s6A" id="tCc-rl-BUr"/>
@@ -222,20 +222,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="960" y="-468"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DSl-KM-0m0">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0Z2-4G-9P7" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FSd-yc-sn0">
+                    <tabBar key="tabBar" alpha="0.55000000000000004" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FSd-yc-sn0">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.85539168119999998" green="0.36852037910000002" blue="0.29324230550000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.85539168119999998" green="0.36852037910000002" blue="0.29324230550000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="3YR-3p-ch8"/>
                         <segue destination="CFO-FY-Ouw" kind="relationship" relationship="viewControllers" id="HQt-eb-Idv"/>
+                        <segue destination="VHV-fL-sa0" kind="relationship" relationship="viewControllers" id="utG-vg-1DG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfJ-wM-r6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -288,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUc-PV-bPH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954.9618320610687" y="721.83098591549299"/>
+            <point key="canvasLocation" x="960" y="216"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="RKn-D9-z8l">
@@ -312,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXg-OZ-E1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2810" y="-15"/>
+            <point key="canvasLocation" x="2210" y="-607"/>
         </scene>
         <!--Show View Controller-->
         <scene sceneID="zeH-Wi-wxa">
@@ -337,13 +341,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hy-5K-6Ab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2810" y="661"/>
+            <point key="canvasLocation" x="2210" y="105"/>
         </scene>
-        <!--Item-->
+        <!--docs-->
         <scene sceneID="xh5-hu-v4B">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CFO-FY-Ouw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hkn-HN-iyY"/>
+                    <tabBarItem key="tabBarItem" title="docs" image="doc.richtext.fill.ar" catalog="system" id="hkn-HN-iyY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FbR-KZ-KW6">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -356,7 +360,36 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6I-Xg-jpE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028.2442748091603" y="721.83098591549299"/>
+            <point key="canvasLocation" x="1695" y="1027"/>
+        </scene>
+        <!--Todo-->
+        <scene sceneID="scQ-Bv-fZm">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Todo" storyboardName="Todo" id="eeR-1t-vSu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VeU-P5-nuG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1PP-Uj-85c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="1162"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="5Lo-3a-Fgr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VHV-fL-sa0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" image="timer" catalog="system" id="bjI-8h-mHf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FyW-kO-ixP">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eeR-1t-vSu" kind="relationship" relationship="rootViewController" id="zLg-Dq-XLF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lnw-ZZ-UtJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11" y="1015"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -364,6 +397,9 @@
         <segue reference="ajF-3i-Ghc"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="doc.richtext.fill.ar" catalog="system" width="115" height="128"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <image name="timer" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodTableViewCell" rowHeight="164" id="KGk-i7-Jjw" customClass="FoodTableViewCell" customModule="SeSAC0523" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UUH-cs-24a">
+                        <rect key="frame" x="272" y="8" width="148" height="148"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UUH-cs-24a" secondAttribute="height" id="uAK-HR-ydT"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOQ-Ey-P6U">
+                        <rect key="frame" x="376" y="112" width="44" height="44"/>
+                        <color key="backgroundColor" red="0.85539168119999998" green="0.36852037910000002" blue="0.29324230550000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="0pY-fA-DX3"/>
+                            <constraint firstAttribute="height" constant="44" id="c9M-LI-izh"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="gift" catalog="system" title=""/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="음식이나 식당 이름 주저리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47M-NH-4NJ">
+                        <rect key="frame" x="16" y="8" width="248" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="tBR-71-U6V"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2025.88.88 | 4.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bi-sO-ZZh">
+                        <rect key="frame" x="16" y="32" width="248" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="dj2-dg-On2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKO-jR-P5N">
+                        <rect key="frame" x="16" y="56" width="248" height="61"/>
+                        <string key="text">이 식당 맛있숴요 Main viewWillDisappear(_:)
+Main viewDidDisappear(_:)</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6Bi-sO-ZZh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="3lQ-7U-Wv5"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jKO-jR-P5N" secondAttribute="bottom" constant="8" id="58z-ws-bHk"/>
+                    <constraint firstItem="UUH-cs-24a" firstAttribute="leading" secondItem="6Bi-sO-ZZh" secondAttribute="trailing" constant="8" id="6KI-9I-O1U"/>
+                    <constraint firstItem="UUH-cs-24a" firstAttribute="leading" secondItem="jKO-jR-P5N" secondAttribute="trailing" constant="8" id="6qc-lH-s7b"/>
+                    <constraint firstAttribute="trailing" secondItem="UUH-cs-24a" secondAttribute="trailing" constant="16" id="GW7-Fb-XZz"/>
+                    <constraint firstItem="JOQ-Ey-P6U" firstAttribute="trailing" secondItem="UUH-cs-24a" secondAttribute="trailing" id="RBT-Ab-ZIe"/>
+                    <constraint firstItem="JOQ-Ey-P6U" firstAttribute="bottom" secondItem="UUH-cs-24a" secondAttribute="bottom" id="Tpd-9z-KkK"/>
+                    <constraint firstAttribute="bottom" secondItem="UUH-cs-24a" secondAttribute="bottom" constant="8" id="Vb9-gP-9ON"/>
+                    <constraint firstItem="jKO-jR-P5N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="cUl-el-oTz"/>
+                    <constraint firstItem="UUH-cs-24a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="d9H-gh-JHy"/>
+                    <constraint firstItem="jKO-jR-P5N" firstAttribute="top" secondItem="6Bi-sO-ZZh" secondAttribute="bottom" constant="4" id="gEP-Kn-UxA"/>
+                    <constraint firstItem="6Bi-sO-ZZh" firstAttribute="top" secondItem="47M-NH-4NJ" secondAttribute="bottom" constant="2" id="nuF-vw-TXP"/>
+                    <constraint firstItem="47M-NH-4NJ" firstAttribute="top" secondItem="UUH-cs-24a" secondAttribute="top" id="quF-hE-civ"/>
+                    <constraint firstItem="47M-NH-4NJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vU9-Iv-d5a"/>
+                    <constraint firstItem="UUH-cs-24a" firstAttribute="leading" secondItem="47M-NH-4NJ" secondAttribute="trailing" constant="8" id="w1A-JS-h7B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="jKO-jR-P5N" id="OD5-We-fXe"/>
+                <outlet property="favoriteButton" destination="JOQ-Ey-P6U" id="T8r-22-67W"/>
+                <outlet property="mainImageView" destination="UUH-cs-24a" id="BE6-Ij-a9N"/>
+                <outlet property="subTitleLabel" destination="6Bi-sO-ZZh" id="CGk-NO-jaP"/>
+                <outlet property="titleLabel" destination="47M-NH-4NJ" id="3dl-W9-Bvh"/>
+            </connections>
+            <point key="canvasLocation" x="227.48091603053433" y="61.971830985915496"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gift" catalog="system" width="128" height="125"/>
+    </resources>
+</document>

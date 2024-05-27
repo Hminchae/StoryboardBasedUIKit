@@ -32,6 +32,7 @@
 		B18257D12C0265CA003926A7 /* SearchRestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257D02C0265CA003926A7 /* SearchRestaurantTableViewCell.swift */; };
 		B18257D52C026E11003926A7 /* SearchRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257D42C026E11003926A7 /* SearchRestaurantViewController.swift */; };
 		B18257D72C0271BF003926A7 /* SearchRestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18257D62C0271BF003926A7 /* SearchRestaurantTableViewController.swift */; };
+		B189AAE62C045D7C008A11D9 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAE52C045D7C008A11D9 /* TravelModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		B18257D02C0265CA003926A7 /* SearchRestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		B18257D42C026E11003926A7 /* SearchRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurantViewController.swift; sourceTree = "<group>"; };
 		B18257D62C0271BF003926A7 /* SearchRestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurantTableViewController.swift; sourceTree = "<group>"; };
+		B189AAE52C045D7C008A11D9 /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				B182579F2C0228B0003926A7 /* LaunchScreen.storyboard */,
+				B189AAE52C045D7C008A11D9 /* TravelModel.swift */,
 				B182579A2C0228AE003926A7 /* Main.storyboard */,
 				B18257942C0228AE003926A7 /* AppDelegate.swift */,
 				B18257962C0228AE003926A7 /* SceneDelegate.swift */,
@@ -244,6 +247,7 @@
 				B18257D12C0265CA003926A7 /* SearchRestaurantTableViewCell.swift in Sources */,
 				B18257972C0228AE003926A7 /* SceneDelegate.swift in Sources */,
 				B18257B72C023C5B003926A7 /* HomeTableViewCell.swift in Sources */,
+				B189AAE62C045D7C008A11D9 /* TravelModel.swift in Sources */,
 				B18257AB2C022AFC003926A7 /* MagazineInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
