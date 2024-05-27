@@ -67,9 +67,9 @@
 - [ ] 4. 기념일 계산기에서 Date 저장하기
 
 ### 구현 화면 
-|감정 다이어리|
-|--|
-|![Simulator Screenshot - iPhone 15 - 2024-05-27 at 04 48 28](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/16fad51b-9d6b-4019-a56f-ba185ff31423) |
+|BMI 계산기|감정 다이어리|
+|--|--|
+아직..|![Simulator Screenshot - iPhone 15 - 2024-05-27 at 04 48 28](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/16fad51b-9d6b-4019-a56f-ba185ff31423)
 
 ## 8일차 과제 
 ### 구현 리스트
@@ -96,7 +96,18 @@
 |:---:|:---:|:---:|:---:|
 |![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 04 22 03](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/33e3e181-c977-42aa-9289-d9c52e5fe469)|![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 03 50 20](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/e4fbb2f9-090d-4fc2-bd04-7b7eca4a55d3)|![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 03 50 23](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/bfe11d19-ee6c-4f0b-b7ac-ed7280dec25f)|![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 03 50 39](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/45771f50-48cc-4784-959d-f573d6de9ac4)|
 
+## 10일차 과제
+### 구현 리스트
+- [x] 1. 인기 도시 화면 만들기
+  - [x] 다중 XIB 활용하여 테이블 뷰 구성
+  - [x] 광고 셀의 경우 배경 컬러 랜덤으로 지정되도록 구현
+  - [x] 별점 UI [외부 라이브러리(Cosmos)](https://github.com/evgenyneu/Cosmos?tab=readme-ov-file) 사용하여 구현
+  - [x] save 값 formatter 사용하여 세자리수 쉼표 적용하여 구현
 
- 
+### 구현 화면
+|도시 정보 - 다크모드|도시정보 - 라이트모드|
+|--|--|
+ ![Simulator Screenshot - iPhone 15 - 2024-05-27 at 20 40 27](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/44a73713-5a92-4955-9d3c-e9a8c612fe91) | ![Simulator Screenshot - iPhone 15 - 2024-05-27 at 20 40 31](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/8e23c935-96b0-41ab-95ba-0ad2530dedf4)
+
  
 
