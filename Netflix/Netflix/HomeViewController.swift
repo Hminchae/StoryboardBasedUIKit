@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
         extractedFunc()
         
         homeTitleLabel.text = "황민채님"
-        homeTitleLabel.font = .systemFont(ofSize: 24, weight: .heavy)
+        homeTitleLabel.font = .systemFont(ofSize: 20, weight: .heavy)
         
         homeMainPoster.contentMode = .scaleAspectFill
         homeMainPoster.cornerRadius = 10
@@ -64,9 +64,9 @@ class HomeViewController: UIViewController {
         homeNowSecondContentsPoster.cornerRadius = 5
         homeNowThirdContentsPoster.cornerRadius = 5
         
-        firstPosterTop10.image = firstPosterTop10Visable ? UIImage(named: "top10 badge") : UIImage(named: "")
-        secondPosterTop10.image = secondPosterTop10Visable ? UIImage(named: "top10 badge") : UIImage(named: "")
-        thirdPosterTop10.image = thirdPosterTop10Visable ? UIImage(named: "top10 badge") : UIImage(named: "")
+        firstPosterTop10.image = firstPosterTop10Visable ? UIImage(named: "top10 badge") : nil
+        secondPosterTop10.image = secondPosterTop10Visable ? UIImage(named: "top10 badge") : nil
+        thirdPosterTop10.image = thirdPosterTop10Visable ? UIImage(named: "top10 badge") : nil
     }
 
     fileprivate func extractedFunc() {

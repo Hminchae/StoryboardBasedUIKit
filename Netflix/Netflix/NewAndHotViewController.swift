@@ -72,30 +72,31 @@ class NewAndHotViewController: UIViewController {
     }
     
     @IBAction func firstButtonClicked(_ sender: UIButton) {
-        newAndHotFirstButton.tintColor = .black
-        newAndHotSecondButton.tintColor = .white
-        newAndHotThirdButton.tintColor = .white
-        newAndHotFirstButton.backgroundColor = .white
-        newAndHotSecondButton.backgroundColor = .clear
-        newAndHotThirdButton.backgroundColor = .clear
-        newAndHotMainLabel.text = "이런! \n찾으시는 공개 예정 작품이 없습니다."
+        mainButtonClicked(mainButton: newAndHotFirstButton,
+                          etcButton1: newAndHotSecondButton,
+                          etcButton2: newAndHotThirdButton,
+                          str: "공개 예정 작품이")
     }
     @IBAction func secondButtonClicked(_ sender: UIButton) {
-        newAndHotFirstButton.tintColor = .white
-        newAndHotSecondButton.tintColor = .black
-        newAndHotThirdButton.tintColor = .white
-        newAndHotFirstButton.backgroundColor = .clear
-        newAndHotSecondButton.backgroundColor = .white
-        newAndHotThirdButton.backgroundColor = .clear
-        newAndHotMainLabel.text = "이런! \n찾으시는 인기 작품이 없습니다."
+        mainButtonClicked(mainButton: newAndHotSecondButton,
+                          etcButton1: newAndHotFirstButton,
+                          etcButton2: newAndHotThirdButton,
+                          str: "인기 작품이")
     }
     @IBAction func thirdButtonClicked(_ sender: UIButton) {
-        newAndHotFirstButton.tintColor = .white
-        newAndHotSecondButton.tintColor = .white
-        newAndHotThirdButton.tintColor = .black
-        newAndHotFirstButton.backgroundColor = .clear
-        newAndHotSecondButton.backgroundColor = .clear
-        newAndHotThirdButton.backgroundColor = .white
-        newAndHotMainLabel.text = "이런! \n찾으시는 Top 10 시리즈가 없습니다."
+        mainButtonClicked(mainButton: newAndHotThirdButton,
+                          etcButton1: newAndHotFirstButton,
+                          etcButton2: newAndHotSecondButton,
+                          str: "Top 10 시리즈가")
+    }
+    
+    func mainButtonClicked(mainButton: UIButton, etcButton1: UIButton, etcButton2: UIButton, str: String) {
+        mainButton.tintColor = .black
+        etcButton1.tintColor = .white
+        etcButton2.tintColor = .white
+        mainButton.backgroundColor = .white
+        etcButton1.backgroundColor = .clear
+        etcButton2.backgroundColor = .clear
+        newAndHotMainLabel.text = "이런! \n찾으시는 \(str) 없습니다."
     }
 }
