@@ -54,17 +54,12 @@ class SearchRestaurantTableViewController: UITableViewController {
         bookmarkStoreButton.tintColor = .darkGray
         
         tableView.indicatorStyle = .white
-        
+        tableView.rowHeight = UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return restaurantInfo.count
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        print(#function)
-        return 170
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -288,16 +288,20 @@
                                         <constraint firstItem="76o-hf-HpU" firstAttribute="top" secondItem="xdT-fH-Rxt" secondAttribute="topMargin" constant="10" id="2Xf-bd-Kde"/>
                                         <constraint firstItem="efN-g1-nWL" firstAttribute="top" secondItem="nEq-mA-cxQ" secondAttribute="bottom" constant="59" id="Dxt-ZX-7qq"/>
                                         <constraint firstItem="et3-qL-Tx6" firstAttribute="leading" secondItem="xdT-fH-Rxt" secondAttribute="leading" constant="15" id="FVG-iB-WhN"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="daQ-b3-mV3" secondAttribute="bottom" constant="5" id="Hlq-Ra-RDk"/>
                                         <constraint firstItem="nEq-mA-cxQ" firstAttribute="top" secondItem="76o-hf-HpU" secondAttribute="bottom" id="aM1-A4-FY5"/>
                                         <constraint firstItem="daQ-b3-mV3" firstAttribute="top" secondItem="nEq-mA-cxQ" secondAttribute="bottom" constant="59" id="awE-Ap-VdC"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="76o-hf-HpU" secondAttribute="trailing" constant="15" id="bh4-Mb-iwR"/>
                                         <constraint firstItem="et3-qL-Tx6" firstAttribute="top" secondItem="xdT-fH-Rxt" secondAttribute="top" constant="15" id="dD0-Mj-yge"/>
                                         <constraint firstItem="nEq-mA-cxQ" firstAttribute="leading" secondItem="et3-qL-Tx6" secondAttribute="trailing" constant="10" id="dTR-z8-cp7"/>
                                         <constraint firstItem="efN-g1-nWL" firstAttribute="leading" secondItem="daQ-b3-mV3" secondAttribute="trailing" constant="10" id="hyc-GS-6vB"/>
+                                        <constraint firstAttribute="bottom" secondItem="99M-2M-cNA" secondAttribute="bottom" constant="15" id="jS1-Ea-acI"/>
                                         <constraint firstItem="76o-hf-HpU" firstAttribute="leading" secondItem="et3-qL-Tx6" secondAttribute="trailing" constant="10" id="jzQ-xy-203"/>
                                         <constraint firstAttribute="trailing" secondItem="99M-2M-cNA" secondAttribute="trailing" constant="15" id="le3-Zo-TRK"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="efN-g1-nWL" secondAttribute="bottom" constant="5" id="sJC-xk-XLg"/>
                                         <constraint firstAttribute="bottom" secondItem="99M-2M-cNA" secondAttribute="bottom" constant="15" id="sUl-m2-uUd"/>
                                         <constraint firstItem="daQ-b3-mV3" firstAttribute="leading" secondItem="et3-qL-Tx6" secondAttribute="trailing" constant="10" id="vmW-Xn-UkP"/>
+                                        <constraint firstAttribute="bottom" secondItem="et3-qL-Tx6" secondAttribute="bottom" constant="11" id="w03-hs-xnq"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

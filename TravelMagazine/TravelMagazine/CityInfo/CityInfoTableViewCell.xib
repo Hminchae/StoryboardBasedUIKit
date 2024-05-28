@@ -28,7 +28,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpD-1g-X4K">
-                        <rect key="frame" x="16" y="36" width="283.33333333333331" height="58.333333333333343"/>
+                        <rect key="frame" x="16" y="36" width="283.33333333333331" height="71"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -49,23 +49,22 @@
                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDi-ss-RV8">
-                        <rect key="frame" x="16" y="98.333333333333329" width="268" height="20"/>
+                        <rect key="frame" x="16.000000000000014" y="117" width="241.33333333333337" height="20"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=". 저장 888888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNe-jm-UBG">
-                                <rect key="frame" x="155" y="0.0" width="113" height="20"/>
+                                <rect key="frame" x="136" y="0.0" width="105.33333333333331" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="113" id="IXC-nK-3wS"/>
-                                    <constraint firstAttribute="height" constant="20" id="q49-vP-7QJ"/>
+                                    <constraint firstAttribute="height" constant="20" id="sXE-w2-9nx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="flA-if-XnS" customClass="CosmosView" customModule="Cosmos">
-                                <rect key="frame" x="0.0" y="0.0" width="155" height="20"/>
+                                <rect key="frame" x="0.0" y="0.0" width="134" height="20"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="851-Ry-E4e"/>
+                                    <constraint firstAttribute="height" constant="20" id="bNV-p9-0qF"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
@@ -79,26 +78,25 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="0le-YZ-1WG"/>
-                            <constraint firstAttribute="bottom" secondItem="qNe-jm-UBG" secondAttribute="bottom" id="4Q2-7p-nvS"/>
-                            <constraint firstItem="flA-if-XnS" firstAttribute="leading" secondItem="zDi-ss-RV8" secondAttribute="leading" id="4hB-xc-ybR"/>
-                            <constraint firstAttribute="trailing" secondItem="qNe-jm-UBG" secondAttribute="trailing" id="OPL-0V-ymA"/>
-                            <constraint firstItem="qNe-jm-UBG" firstAttribute="leading" secondItem="flA-if-XnS" secondAttribute="trailing" id="Q9a-Qq-DGW"/>
-                            <constraint firstItem="flA-if-XnS" firstAttribute="top" secondItem="zDi-ss-RV8" secondAttribute="top" id="ZDW-u0-6bY"/>
-                            <constraint firstAttribute="bottom" secondItem="flA-if-XnS" secondAttribute="bottom" id="ZsP-hW-ijm"/>
-                            <constraint firstItem="qNe-jm-UBG" firstAttribute="top" secondItem="zDi-ss-RV8" secondAttribute="top" id="kzi-yZ-jyH"/>
+                            <constraint firstItem="flA-if-XnS" firstAttribute="top" secondItem="zDi-ss-RV8" secondAttribute="top" id="4Ha-dm-TLG"/>
+                            <constraint firstItem="qNe-jm-UBG" firstAttribute="leading" secondItem="flA-if-XnS" secondAttribute="trailing" constant="2" id="IGF-Mp-H4Y"/>
+                            <constraint firstItem="qNe-jm-UBG" firstAttribute="top" secondItem="zDi-ss-RV8" secondAttribute="top" id="K3q-By-1Fv"/>
+                            <constraint firstItem="flA-if-XnS" firstAttribute="leading" secondItem="zDi-ss-RV8" secondAttribute="leading" id="RY8-rE-8Gy"/>
+                            <constraint firstAttribute="trailing" secondItem="qNe-jm-UBG" secondAttribute="trailing" id="cLc-oM-x6s"/>
+                            <constraint firstAttribute="bottom" secondItem="qNe-jm-UBG" secondAttribute="bottom" id="hmZ-h3-FFE"/>
+                            <constraint firstAttribute="bottom" secondItem="flA-if-XnS" secondAttribute="bottom" id="qQ9-rc-drQ"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="boq-iv-z2y" firstAttribute="leading" secondItem="zDi-ss-RV8" secondAttribute="trailing" constant="50" id="1nn-fi-zCr"/>
                     <constraint firstItem="oX2-Gc-XAg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="1th-lT-8cT"/>
-                    <constraint firstItem="boq-iv-z2y" firstAttribute="leading" secondItem="zDi-ss-RV8" secondAttribute="trailing" constant="23.333333333333258" id="3vV-8d-QgD"/>
                     <constraint firstAttribute="bottom" secondItem="oX2-Gc-XAg" secondAttribute="bottom" constant="114" id="53W-k4-ddE"/>
-                    <constraint firstAttribute="bottom" secondItem="zDi-ss-RV8" secondAttribute="bottom" constant="38.670000000000002" id="6z2-Wh-fqP"/>
                     <constraint firstAttribute="trailing" secondItem="oX2-Gc-XAg" secondAttribute="trailing" constant="25" id="BFS-9t-6D5"/>
+                    <constraint firstItem="zDi-ss-RV8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Csv-Np-T3F"/>
+                    <constraint firstItem="zDi-ss-RV8" firstAttribute="top" secondItem="bpD-1g-X4K" secondAttribute="bottom" constant="10" id="DiN-zp-gRo"/>
                     <constraint firstItem="xKo-Io-tqP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="GA3-I6-7om"/>
-                    <constraint firstItem="zDi-ss-RV8" firstAttribute="top" secondItem="bpD-1g-X4K" secondAttribute="bottom" constant="4" id="H40-Pw-uel"/>
-                    <constraint firstItem="zDi-ss-RV8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Kto-s9-Mz6"/>
+                    <constraint firstAttribute="bottom" secondItem="zDi-ss-RV8" secondAttribute="bottom" constant="20" id="KDI-WB-pJY"/>
                     <constraint firstItem="boq-iv-z2y" firstAttribute="leading" secondItem="bpD-1g-X4K" secondAttribute="trailing" constant="8" id="MZ5-7v-sDM"/>
                     <constraint firstAttribute="bottom" secondItem="boq-iv-z2y" secondAttribute="bottom" constant="8" id="NqL-ld-Ynm"/>
                     <constraint firstItem="boq-iv-z2y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="RJe-ne-Z7f"/>

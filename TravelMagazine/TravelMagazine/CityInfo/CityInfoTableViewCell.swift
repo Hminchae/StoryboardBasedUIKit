@@ -56,9 +56,9 @@ class CityInfoTableViewCell: UITableViewCell {
         // 저장 숫자
         if let saveCount = data.save {
             let result = numberFormatter.string(from: NSNumber(value: saveCount))
-            saveCountLabel.text = "저장 \(result!)"
+            saveCountLabel.text = "﹒저장 \(result!)"
         } else {
-            saveCountLabel.text = "저장 정보 없음"
+            saveCountLabel.text = "﹒저장 정보 없음"
         }
         
         // 여행 사진
