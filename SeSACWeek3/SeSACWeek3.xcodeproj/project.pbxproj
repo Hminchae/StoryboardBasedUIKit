@@ -10,6 +10,9 @@
 		B157A5C42C0563A900122464 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157A5C32C0563A900122464 /* SettingViewController.swift */; };
 		B157A5C62C0563B600122464 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157A5C52C0563B600122464 /* HomeViewController.swift */; };
 		B157A5C82C0563C100122464 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157A5C72C0563C100122464 /* SearchViewController.swift */; };
+		B157A5CB2C05659E00122464 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157A5CA2C05659E00122464 /* UIViewController+Extension.swift */; };
+		B157A5CF2C0579E400122464 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157A5CD2C0579E400122464 /* SampleTableViewCell.swift */; };
+		B157A5D02C0579E400122464 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B157A5CE2C0579E400122464 /* SampleTableViewCell.xib */; };
 		B18BCB3A2C055E9400EA8869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18BCB392C055E9400EA8869 /* AppDelegate.swift */; };
 		B18BCB3C2C055E9400EA8869 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18BCB3B2C055E9400EA8869 /* SceneDelegate.swift */; };
 		B18BCB3E2C055E9400EA8869 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18BCB3D2C055E9400EA8869 /* ViewController.swift */; };
@@ -25,6 +28,9 @@
 		B157A5C32C0563A900122464 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		B157A5C52C0563B600122464 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B157A5C72C0563C100122464 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B157A5CA2C05659E00122464 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B157A5CD2C0579E400122464 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
+		B157A5CE2C0579E400122464 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
 		B18BCB362C055E9400EA8869 /* SeSACWeek3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACWeek3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18BCB392C055E9400EA8869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18BCB3B2C055E9400EA8869 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,23 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		B157A5C92C05658300122464 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B157A5CA2C05659E00122464 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B157A5CC2C0579A700122464 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B157A5CD2C0579E400122464 /* SampleTableViewCell.swift */,
+				B157A5CE2C0579E400122464 /* SampleTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B18BCB2D2C055E9400EA8869 = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +118,13 @@
 		B18BCB382C055E9400EA8869 /* SeSACWeek3 */ = {
 			isa = PBXGroup;
 			children = (
+				B157A5CC2C0579A700122464 /* Cell */,
 				B18BCB442C055E9500EA8869 /* LaunchScreen.storyboard */,
 				B18BCB3F2C055E9400EA8869 /* Main.storyboard */,
 				B157A5C02C05635900122464 /* Home */,
 				B157A5C12C05635F00122464 /* Search */,
 				B157A5C22C05636600122464 /* Setting */,
+				B157A5C92C05658300122464 /* Extension */,
 				B18BCB392C055E9400EA8869 /* AppDelegate.swift */,
 				B18BCB3B2C055E9400EA8869 /* SceneDelegate.swift */,
 				B18BCB3D2C055E9400EA8869 /* ViewController.swift */,
@@ -168,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18BCB462C055E9500EA8869 /* LaunchScreen.storyboard in Resources */,
+				B157A5D02C0579E400122464 /* SampleTableViewCell.xib in Resources */,
 				B18BCB432C055E9500EA8869 /* Assets.xcassets in Resources */,
 				B18BCB412C055E9400EA8869 /* Main.storyboard in Resources */,
 				B18BCB4E2C05603500EA8869 /* Home.storyboard in Resources */,
@@ -184,9 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B157A5C82C0563C100122464 /* SearchViewController.swift in Sources */,
+				B157A5CF2C0579E400122464 /* SampleTableViewCell.swift in Sources */,
 				B157A5C62C0563B600122464 /* HomeViewController.swift in Sources */,
 				B18BCB3E2C055E9400EA8869 /* ViewController.swift in Sources */,
 				B18BCB3A2C055E9400EA8869 /* AppDelegate.swift in Sources */,
+				B157A5CB2C05659E00122464 /* UIViewController+Extension.swift in Sources */,
 				B18BCB3C2C055E9400EA8869 /* SceneDelegate.swift in Sources */,
 				B157A5C42C0563A900122464 /* SettingViewController.swift in Sources */,
 			);
