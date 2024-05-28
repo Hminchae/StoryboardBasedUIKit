@@ -23,10 +23,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     
     lazy var buttonList = [firstFilterButton, secondFilterButton, thirdFilterButton] // 나중에 초기화하겠다~
+
+    let list = TravelInfo.travel
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SampleTableViewCell.identifier, for:indexPath) as! SampleTableViewCell
         
+        let data = list[indexPath.row]
+        cell.configureCell(data)
+       
         return cell
     }
 
@@ -35,10 +40,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         let xib = UINib(nibName: SampleTableViewCell.identifier, bundle: nil)
         tableView.register(xib, forCellReuseIdentifier: SampleTableViewCell.identifier)
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return list.count
+       
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +53,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         configureView("홈")
         configareTableView()
         
-        tableView.rowHeight = 120
+        tableView.rowHeight = UITableView.automaticDimension
         
     }
 }

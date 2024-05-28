@@ -1,4 +1,31 @@
 import UIKit
+/*
+ 연산 프로퍼티
+ - 말 그대로 연산만 해주는 통로? 같은 역할
+ - 연산 프로퍼티는 그래서 초기화 구문이 필요가 없고, 메모리 공간을 차지하지 않음
+ - 다른 저장 프로퍼티의 값을 가지고 연산을 한다.
+ - 그래서 연산 프로퍼티는 보통 저장 프로퍼티가 필요함.
+ */
+struct BMI {
+    var weight: Double = 50
+    var height: Double = 150 // 인스턴스 저장 프로퍼티
+    
+    var BMIResult: String {
+        let value = (bmi.weight * bmi.weight) / height
+        let result = value < 18.5 ? "저체중" : "정상 이상"
+        
+        return "\(result)입니다."
+    }
+}
+
+
+let bmi = BMI()
+bmi.BMIResult
+
+let value = (bmi.weight * bmi.weight) / bmi.height
+let result = value < 18.5 ? "저체중" : "정상 이상"
+print("\(result)입니다.")
+
 
 class User {
     static let team = "SeSAC" // 타입 프로퍼티 -> 앱을 종료하기 전까지 계속 사용하는 공간"
