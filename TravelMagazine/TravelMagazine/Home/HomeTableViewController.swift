@@ -17,16 +17,12 @@ class HomeTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.separatorStyle = .none // 테이블뷰 separator 없애기
         homeNavgationTitle.barTintColor = .systemBackground
+        tableView.rowHeight = UITableView.automaticDimension
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+
         return magazineInfo.count
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        print(#function)
-        return 490
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -37,21 +33,16 @@ class HomeTableViewController: UITableViewController {
         // 사진
         let url = URL(string: magazineInfo[indexPath.row].photo_image)
         cell.homePhotoCardImage.kf.setImage(with: url)
-        cell.homePhotoCardImage.contentMode = .scaleAspectFill
-        cell.homePhotoCardImage.layer.cornerRadius = 10
-        cell.homePhotoCardImage.layer.shadowColor = UIColor.gray.cgColor
+        cell.homePhotoCardImage.setHomePhotoCardImage()
 
         // 타이틀
         cell.homePhotoTitleLabel.text = magazineInfo[indexPath.row].title
-        cell.homePhotoTitleLabel.textColor = .label
-        cell.homePhotoTitleLabel.numberOfLines = 2
-        cell.homePhotoTitleLabel.font = UIFont(name: "Pretendard-SemiBold", size: 24)
+        cell.homePhotoTitleLabel.setHomePhotoTitleLabel()
         
         
         // 서브 타이틀
         cell.homePhotoSubtitleLabel.text = magazineInfo[indexPath.row].subtitle
-        cell.homePhotoSubtitleLabel.textColor = .gray
-        cell.homePhotoSubtitleLabel.font = UIFont(name: "Pretendard-Bold", size: 15)
+        cell.homePhotoSubtitleLabel.setHomeSubtitleLabel()
         
         // 날짜
         let dateFormatter = DateFormatter()
@@ -63,14 +54,8 @@ class HomeTableViewController: UITableViewController {
         
         let resultDate = myDateFormatter.string(from: convertDate!)
         cell.homePhotoDate.text = resultDate
-        cell.homePhotoDate.textColor = .gray
-        cell.homePhotoDate.font = UIFont(name: "Pretendard-Medium", size: 13)
-        cell.homePhotoDate.textAlignment = .right
+        cell.homePhotoDate.setDateLabel()
         
         return cell
     }
-    
-    
-    
-
 }

@@ -8,6 +8,7 @@
 import UIKit
 
 class AdTableViewCell: UITableViewCell {
+    static let identifier = "AdTableViewCell"
     
     @IBOutlet weak var adTitleLabel: UILabel!
     @IBOutlet weak var adBadgeLabel: UILabel!
@@ -31,8 +32,6 @@ class AdTableViewCell: UITableViewCell {
         adBadgeView.setBadgeView()
         adView.setAdView()
     }
-    
-    
     
     func configureCell(data: Travel) {
         adTitleLabel.text = data.title

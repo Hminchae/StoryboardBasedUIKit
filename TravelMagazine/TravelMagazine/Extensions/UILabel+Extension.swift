@@ -8,6 +8,25 @@
 import UIKit
 
 extension UILabel {
+    //-------------Home----------------
+    func setHomePhotoTitleLabel() {
+        self.textColor = .label
+        self.numberOfLines = 0
+        self.font = UIFont(name: "Pretendard-SemiBold", size: 24)
+    }
+    
+    func setHomeSubtitleLabel() {
+        self.textColor = .gray
+        self.font = UIFont(name: "Pretendard-Bold", size: 15)
+    }
+    
+    func setDateLabel() {
+        self.textColor = .gray
+        self.font = UIFont(name: "Pretendard-Medium", size: 13)
+        self.textAlignment = .right
+    }
+    //------------Search---------------
+    //-------------City----------------
     func setPrimaryLabel() {
         self.font = UIFont(name: "Pretendard-SemiBold", size: 17)
         self.textAlignment = .left
@@ -18,7 +37,7 @@ extension UILabel {
         self.font = UIFont(name: "Pretendard-Bold", size: 15)
         self.textAlignment = .left
         self.textColor = .lightGray
-        self.numberOfLines = 2
+        self.numberOfLines = 0
     }
     
     func setSmallLabel() {
@@ -37,7 +56,7 @@ extension UILabel {
         self.text = "AD"
         self.textAlignment = .center
         self.textColor = .black
-        self.numberOfLines = 2
+        self.numberOfLines = 0
         self.font = UIFont(name: "Pretendard-ExtraBold", size: 17)
     }
 }

@@ -11,15 +11,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdTableViewCell" rowHeight="81" id="KGk-i7-Jjw" customClass="AdTableViewCell" customModule="TravelMagazine" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="436" height="100"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdTableViewCell" rowHeight="102" id="KGk-i7-Jjw" customClass="AdTableViewCell" customModule="TravelMagazine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="121"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="436" height="100"/>
+                <rect key="frame" x="0.0" y="0.0" width="436" height="121"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lY-Eq-GyQ">
-                        <rect key="frame" x="197.33333333333334" y="40" width="41.333333333333343" height="20.333333333333329"/>
+                        <rect key="frame" x="20" y="10" width="396" height="101"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="wex-vE-TWn"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -53,7 +56,11 @@
                     <constraint firstItem="0lY-Eq-GyQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="7WL-aZ-f9H"/>
                     <constraint firstAttribute="trailing" secondItem="HdK-Pq-hJq" secondAttribute="trailing" constant="2" id="Ai2-3d-fqo"/>
                     <constraint firstItem="HdK-Pq-hJq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="AiA-rO-vny"/>
+                    <constraint firstAttribute="trailing" secondItem="0lY-Eq-GyQ" secondAttribute="trailing" constant="20" id="XN3-1g-70I"/>
+                    <constraint firstAttribute="bottom" secondItem="0lY-Eq-GyQ" secondAttribute="bottom" constant="10" id="Zxw-wK-Rfy"/>
                     <constraint firstItem="0lY-Eq-GyQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fXg-Vp-fBU"/>
+                    <constraint firstItem="0lY-Eq-GyQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ij7-ZJ-hwu"/>
+                    <constraint firstItem="0lY-Eq-GyQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="mex-LS-SNB"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -63,7 +70,7 @@
                 <outlet property="adTitleLabel" destination="0lY-Eq-GyQ" id="sOC-ml-Afk"/>
                 <outlet property="adView" destination="H2p-sc-9uM" id="vrp-yY-vjY"/>
             </connections>
-            <point key="canvasLocation" x="32.061068702290072" y="12.67605633802817"/>
+            <point key="canvasLocation" x="32.061068702290072" y="20.070422535211268"/>
         </tableViewCell>
     </objects>
     <resources>

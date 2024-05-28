@@ -10,7 +10,8 @@ import Cosmos
 import Kingfisher
 
 class CityInfoTableViewCell: UITableViewCell {
-
+    static let identifier = "CityInfoTableViewCell"
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
     
@@ -25,44 +26,42 @@ class CityInfoTableViewCell: UITableViewCell {
         super.awakeFromNib()
         configureLayout()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     func configureLayout() {
         titleLabel.setPrimaryLabel()
         subTitleLabel.setSecndaryLabel()
-        rateLabel.setSmallLabel()
         saveCountLabel.setSmallLabel()
         mainImageView.setImageView()
+        likeButton.setHeartButton()
     }
     
     func configureCell(data: Travel) {
         titleLabel.text = data.title
         subTitleLabel.text = data.description
         
-        rateView.settings.updateOnTouch = false
+        rateView.settings.updateOnTouch = false // 별점 터치 막기
+        
+        // 별점 이미지
         if let grade = data.grade {
             rateView.rating = grade
-            rateLabel.text = "(\(grade))"
+            rateView.text = "(\(grade))"
         } else {
             rateView.rating = 0
-            rateLabel.text = "(0)"
+            rateView.text = "(0.0)"
         }
-        
+    
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
         
+        // 저장 숫자
         if let saveCount = data.save {
             let result = numberFormatter.string(from: NSNumber(value: saveCount))
-            saveCountLabel.text = "﹒저장 \(result!)"
+            saveCountLabel.text = "저장 \(result!)"
         } else {
-            saveCountLabel.text = "﹒저장 0"
+            saveCountLabel.text = "저장 정보 없음"
         }
         
+        // 여행 사진
         if let url = data.travel_image {
             let urlStr = URL(string: url)
             mainImageView.kf.setImage(with: urlStr)
@@ -74,9 +73,8 @@ class CityInfoTableViewCell: UITableViewCell {
         var heartImage: UIImage
         
         heartImage = heartState ? UIImage(systemName: "heart.fill")! : UIImage(systemName: "heart")!
+        
         likeButton.setImage(heartImage, for: .normal)
         likeButton.setTitle("", for: .normal)
-        likeButton.setHeartButton()
-    
     }
 }

@@ -14,6 +14,15 @@ struct Travel {
     let save: Int?
     var like: Bool?
     let ad : Bool
+    
+    // 연산 프로퍼티 - 별점 타이틀
+    var gradeTitle: String {
+        if let grade {
+            return "(\(grade))"
+        } else {
+            return "평점없음"
+        }
+    }
 }
 
 struct TravelInfo {
@@ -46,7 +55,7 @@ struct TravelInfo {
                save: 7892,
                like: true,
                ad: false),
-        Travel(title: "하와이 여행을 가고싶다면?\n수업이 있는데 가실 생각은 아니시죠?",
+        Travel(title: "하와이 여행을 가고싶다면?\n수업이 있는데 가실 생각은 아니시죠?하와이 여행을 가고싶다면?\n수업이 있는데 가실 생각은 아니시죠?하와이 여행을 가고싶다면?\n수업이 있는데 가실 생각은 아니시죠?하와이 여행을 가고싶다면?\n수업이 있는데 가실 생각은 아니시죠?하와이 여행을 가고싶다면?\n수업이 있는데 가실 생각은 아니시죠?하와이 여행을 가고싶다면?\n수업이 있는데 가실 생각은 아니시죠?하와이 여행을 가고싶다면?\n수업이 있는데 가실 생각은 아니시죠?하와이 여행을 가고싶다면?\n수업이 있는데 가실 생각은 아니시죠?하와이 여행을 가고싶다면?\n수업이 있는데 가실 생각은 아니시죠?하와이 여행을 가고싶다면?\n수업이 있는데 가실 생각은 아니시죠?",
                description: nil,
                travel_image: nil,
                grade: nil,

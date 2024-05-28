@@ -99,6 +99,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B157A5D72C05C41B00122464 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B189AAF72C046E19008A11D9 /* UILabel+Extension.swift */,
+				B189AAFD2C048BE8008A11D9 /* UIButton+Extension.swift */,
+				B189AAFB2C048B32008A11D9 /* UIView+Extension.swift */,
+				B189AAF92C047448008A11D9 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B18257882C0228AE003926A7 = {
 			isa = PBXGroup;
 			children = (
@@ -125,10 +136,11 @@
 				B18257982C0228AE003926A7 /* ViewController.swift */,
 				B182579D2C0228B0003926A7 /* Assets.xcassets */,
 				B18257A22C0228B0003926A7 /* Info.plist */,
+				B18257BB2C025983003926A7 /* Home */,
+				B157A5D72C05C41B00122464 /* Extensions */,
 				B189AAE92C046255008A11D9 /* CityInfo */,
 				B18257BC2C02599F003926A7 /* SearchRestaurant */,
 				B18257BD2C025A01003926A7 /* Font */,
-				B18257BB2C025983003926A7 /* Home */,
 			);
 			path = TravelMagazine;
 			sourceTree = "<group>";
@@ -176,15 +188,11 @@
 			isa = PBXGroup;
 			children = (
 				B189AAE52C045D7C008A11D9 /* TravelModel.swift */,
+				B189AAEA2C046285008A11D9 /* CityInfoViewController.swift */,
+				B189AAEC2C046383008A11D9 /* CityInfoTableViewCell.swift */,
 				B189AAE72C0461CB008A11D9 /* CityInfo.storyboard */,
 				B189AAED2C046383008A11D9 /* CityInfoTableViewCell.xib */,
 				B189AAF12C04638F008A11D9 /* AdTableViewCell.xib */,
-				B189AAEA2C046285008A11D9 /* CityInfoViewController.swift */,
-				B189AAEC2C046383008A11D9 /* CityInfoTableViewCell.swift */,
-				B189AAF72C046E19008A11D9 /* UILabel+Extension.swift */,
-				B189AAFB2C048B32008A11D9 /* UIView+Extension.swift */,
-				B189AAFD2C048BE8008A11D9 /* UIButton+Extension.swift */,
-				B189AAF92C047448008A11D9 /* UIImageView+Extension.swift */,
 				B189AAF02C04638F008A11D9 /* AdTableViewCell.swift */,
 			);
 			path = CityInfo;

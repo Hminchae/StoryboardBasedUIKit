@@ -8,9 +8,11 @@
 import UIKit
 
 extension UIButton {
+    //-------------Home----------------
+    //------------Search---------------
+    //-------------City----------------
     func setHeartButton() {
         self.tintColor = .white
         self.layer.borderColor = UIColor.white.cgColor
-        //self.layer.borderWidth = 1
     }
 }

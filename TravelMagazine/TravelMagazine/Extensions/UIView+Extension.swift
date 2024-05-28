@@ -8,6 +8,9 @@
 import UIKit
 
 extension UIView {
+    //-------------Home----------------
+    //------------Search---------------
+    //-------------City----------------
     func setBadgeView() {
         self.layer.cornerRadius = 8
         self.backgroundColor = .white
