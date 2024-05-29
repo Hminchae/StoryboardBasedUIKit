@@ -13,8 +13,7 @@ import UIKit
  3. delegate = self, datasource = self
  */
 
-
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController {
     @IBOutlet weak var userTextfield: UITextField!
     
     @IBOutlet weak var firstFilterButton: UIButton!
@@ -27,38 +26,30 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     let list = TravelInfo.travel
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: SampleTableViewCell.identifier, for:indexPath) as! SampleTableViewCell
-        
-        let data = list[indexPath.row]
-        cell.configureCell(data)
-//        cell.selectionStyle = .none -> 눌렀을 때 스타일
-        return cell
-    }
-
-    func configareTableView() {
-//        tableView.isUserInteractionEnabled = false
-//        tableView.allowsSelection = false
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        let xib = UINib(nibName: SampleTableViewCell.identifier, bundle: nil)
-        tableView.register(xib, forCellReuseIdentifier: SampleTableViewCell.identifier)
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureView("홈")
         configareTableView()
+    }
+}
+
+// MARK: HomeView UI 설정 관련
+extension HomeViewController {
+    func configareTableView() {
+//        tableView.isUserInteractionEnabled = false
+//        tableView.allowsSelection = false
         
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.delegate = self
+        tableView.dataSource = self
+        let xib = UINib(nibName: SampleTableViewCell.identifier, bundle: nil)
+        tableView.register(xib, forCellReuseIdentifier: SampleTableViewCell.identifier)
     }
-    
+}
+
+// MARK: HomeView Table Delegate, DataSource
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     // 셀을 클릭했는데 동작을 안 한다면?
     // - print 로 확인
     // - delegate, datasource = self 빠뜨리지 않았아..
@@ -86,6 +77,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.reloadRows(at: [indexPath], with: .automatic) // 화면 갔다가 다시 원래 셀의 모양을 돌려줘
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: SampleTableViewCell.identifier, for:indexPath) as! SampleTableViewCell
+        
+        let data = list[indexPath.row]
+        cell.configureCell(data)
+//        cell.selectionStyle = .none -> 눌렀을 때 스타일
+        return cell
+    }
 }
-
-

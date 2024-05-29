@@ -87,4 +87,3 @@ struct User {
     var weight: Double
     var height: Double
 }
-
