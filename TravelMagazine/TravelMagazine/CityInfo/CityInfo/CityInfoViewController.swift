@@ -64,5 +64,30 @@ extension CityInfoViewController: UITableViewDelegate, UITableViewDataSource {
             cell.configureCell(data: data)
             return cell
         }
+        
+        tableView.reloadRows(at: [indexPath], with: .automatic) // 화면 갔다가 다시 원래 셀의 모양을 돌려줘
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = list[indexPath.row]
+        
+        if data.ad {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "AdViewController") as! AdViewController
+            
+            let nav = UINavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            nav.modalTransitionStyle = .coverVertical
+            
+            present(nav, animated: true)
+            
+        } else {
+            let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+            backBarButtonItem.tintColor = .black
+            self.navigationItem.backBarButtonItem = backBarButtonItem
+            
+            let vc = storyboard?.instantiateViewController(withIdentifier: "CityInfoDetailViewController") as! CityInfoDetailViewController
+   
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

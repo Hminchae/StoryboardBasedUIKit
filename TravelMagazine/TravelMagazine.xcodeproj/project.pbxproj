@@ -44,6 +44,8 @@
 		B189AAFA2C047448008A11D9 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAF92C047448008A11D9 /* UIImageView+Extension.swift */; };
 		B189AAFC2C048B32008A11D9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAFB2C048B32008A11D9 /* UIView+Extension.swift */; };
 		B189AAFE2C048BE8008A11D9 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189AAFD2C048BE8008A11D9 /* UIButton+Extension.swift */; };
+		B1A7A9A62C079F3E007CF0FE /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7A9A52C079F3E007CF0FE /* AdViewController.swift */; };
+		B1A7A9A82C079F73007CF0FE /* CityInfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7A9A72C079F73007CF0FE /* CityInfoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		B189AAF92C047448008A11D9 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		B189AAFB2C048B32008A11D9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B189AAFD2C048BE8008A11D9 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		B1A7A9A52C079F3E007CF0FE /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		B1A7A9A72C079F73007CF0FE /* CityInfoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInfoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,12 +192,30 @@
 			isa = PBXGroup;
 			children = (
 				B189AAE52C045D7C008A11D9 /* TravelModel.swift */,
-				B189AAEA2C046285008A11D9 /* CityInfoViewController.swift */,
-				B189AAEC2C046383008A11D9 /* CityInfoTableViewCell.swift */,
 				B189AAE72C0461CB008A11D9 /* CityInfo.storyboard */,
+				B1A7A9AA2C07A05D007CF0FE /* CityInfo */,
+				B1A7A9A92C07A047007CF0FE /* Ad */,
 				B189AAED2C046383008A11D9 /* CityInfoTableViewCell.xib */,
 				B189AAF12C04638F008A11D9 /* AdTableViewCell.xib */,
+			);
+			path = CityInfo;
+			sourceTree = "<group>";
+		};
+		B1A7A9A92C07A047007CF0FE /* Ad */ = {
+			isa = PBXGroup;
+			children = (
 				B189AAF02C04638F008A11D9 /* AdTableViewCell.swift */,
+				B1A7A9A52C079F3E007CF0FE /* AdViewController.swift */,
+			);
+			path = Ad;
+			sourceTree = "<group>";
+		};
+		B1A7A9AA2C07A05D007CF0FE /* CityInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B189AAEC2C046383008A11D9 /* CityInfoTableViewCell.swift */,
+				B1A7A9A72C079F73007CF0FE /* CityInfoDetailViewController.swift */,
+				B189AAEA2C046285008A11D9 /* CityInfoViewController.swift */,
 			);
 			path = CityInfo;
 			sourceTree = "<group>";
@@ -306,6 +328,8 @@
 				B189AAFA2C047448008A11D9 /* UIImageView+Extension.swift in Sources */,
 				B18257972C0228AE003926A7 /* SceneDelegate.swift in Sources */,
 				B18257B72C023C5B003926A7 /* HomeTableViewCell.swift in Sources */,
+				B1A7A9A62C079F3E007CF0FE /* AdViewController.swift in Sources */,
+				B1A7A9A82C079F73007CF0FE /* CityInfoDetailViewController.swift in Sources */,
 				B189AAE62C045D7C008A11D9 /* TravelModel.swift in Sources */,
 				B18257AB2C022AFC003926A7 /* MagazineInfo.swift in Sources */,
 				B189AAEB2C046285008A11D9 /* CityInfoViewController.swift in Sources */,
