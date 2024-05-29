@@ -11,6 +11,5 @@ extension UIViewController {
     
     func configureView(_ title: String) {
         navigationItem.title = title
-        view.backgroundColor = .green
     }
 }
