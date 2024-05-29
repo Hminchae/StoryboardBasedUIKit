@@ -68,12 +68,23 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     // - 제스처 중첩 : 만약 셀 클릭 + 셀에 탭제스처, 테이블 뷰 탭제스처
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(#function, indexPath)
-        // 1. 스토리보드 가져오기
-        let sb = UIStoryboard(name: "Setting", bundle: nil)
-        // 2. 스토리보드 내 전환하고자 하는 화면 가져오기
-        let vc = sb.instantiateViewController(withIdentifier: "BrownViewController") as! BrownViewController
-        // 3. 화면 띄우기
-        present(vc, animated: true)
+        let data = list[indexPath.row]
+        
+        if data.ad {
+            // 1. 스토리보드 가져오기
+            let sb = UIStoryboard(name: "Setting", bundle: nil)
+            // 2. 스토리보드 내 전환하고자 하는 화면 가져오기
+            let vc = sb.instantiateViewController(withIdentifier: "BrownViewController") as! BrownViewController
+            // 3. 화면 띄우기
+            present(vc, animated: true)
+        } else {
+            /*let sb = UIStoryboard(name: "Home", bundle: nil)*/ // 내가 가지고 있어..
+            let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+            
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        tableView.reloadRows(at: [indexPath], with: .automatic) // 화면 갔다가 다시 원래 셀의 모양을 돌려줘
     }
 }
 

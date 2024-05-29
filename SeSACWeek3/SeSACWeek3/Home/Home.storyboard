@@ -27,12 +27,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWa-2i-Rz3">
-                                <rect key="frame" x="103" y="137" width="161" height="36"/>
+                                <rect key="frame" x="103" y="137" width="130" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="EHu-zO-8uS"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="afddfdfgsfgsfgsfg"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A38-6W-KdR">
                                 <rect key="frame" x="20" y="137" width="75" height="36"/>
@@ -43,7 +43,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHz-En-4Ek">
-                                <rect key="frame" x="272" y="137" width="75" height="36"/>
+                                <rect key="frame" x="241" y="137" width="75" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="bZ5-WD-aLo"/>
                                 </constraints>
