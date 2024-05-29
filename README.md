@@ -1,4 +1,4 @@
-## 2일차 과제
+## 2회차 과제
 ### 구현 리스트
 - [x] 1. 배달의 민족 프로젝트 UI 구성
   - [x] 네비게이션 컨트롤러 활용
@@ -10,7 +10,7 @@
 |--|--|--|
 ![Simulator Screenshot - iPhone 15 - 2024-05-15 at 20 58 02](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/78627b17-117f-4098-b4bf-0915546e59e3) | ![Simulator Screenshot - iPhone 15 Pro - 2024-05-15 at 00 57 02](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/5764afa8-ceb0-4397-87b5-652cf3bc1d60) | ![Simulator Screenshot - iPhone 15 Pro - 2024-05-16 at 02 01 14](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/81782f06-27a7-4ea7-8cb5-66334debbfa7)
 
-## 3일차 과제
+## 3회차 과제
 ### 구현 리스트
 - [x] 1. 넷플릭스 회원가입 화면 코드로 구현
   - [x] 사용자 회원 가입 버튼 클릭 시, 키보드가 내려가도록 구현
@@ -26,7 +26,7 @@
 ![simulator_screenshot_2EA24F18-D023-4DEB-96B7-8D3E034639BE](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/e1d56ccd-0d9a-4ca8-ac54-9c23e8bd3ce6) | ![simulator_screenshot_B122B3EF-6BCE-4AC4-B651-6D1CD802ED9B](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/58bda896-c2d9-4be1-a689-fd84d8d05ff8) | ![simulator_screenshot_F482E10C-EB96-41D2-A37F-D966B7BDADD4](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/230f6fda-8426-4417-b79e-0234cd52b92a) | ![simulator_screenshot_861398EE-5ED6-4EE0-8A0F-450A215A9559](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/5a4d9f13-5eac-4726-a081-f671e236f4ae)
 
 
-## 4일차 과제
+## 4회차 과제
 ### 구현 리스트
 - [x] 1. 감정 다이어리 구성
   - [x] 감정 버튼 클릭 횟수 표시
@@ -38,7 +38,7 @@
 |--|--|--|
 ![Simulator Screenshot - iPhone 15 - 2024-05-27 at 04 48 28](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/681acc6a-0548-4bf5-a5d8-295c8d0797a9) | ![Simulator Screenshot - iPhone 15 - 2024-05-27 at 05 06 09](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/94f90ff2-71cd-4df5-bf6c-2eaca084dad5) | ![Simulator Screenshot - iPhone 15 - 2024-05-27 at 05 06 30](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/7fb765f2-60ee-4c14-8428-8585d784025c)
 
-## 5일차 과제
+## 5회차 과제
 ### 구현 리스트
 - [ ] 1. 넷플릭스 프로젝트 함수 로직 개선 & 오토레이아웃 적용
 - [x] 2. 감정 다이어리 함수 로직 개선 & 오토레이아웃 적용
@@ -48,7 +48,7 @@
 
 ### 구현 화면
 
-## 6일차 과제
+## 6회차 과제
 ### 구현 리스트
 - [ ] 1. BMI 계산기 구현하기
   - [ ] 결과 확인 클릭 시 결과 Alert 띄우기
@@ -56,7 +56,7 @@
   - [ ] 들어갈 수 없는 값들을 핸들링하기
 ### 구현 화면
 
-## 7일차 과제
+## 7회차 과제
 ### 구현 리스트
 - [ ] 1. BMI 계산기
   - [ ] UserDefaults 활용하여 개인 값 저장
@@ -71,7 +71,7 @@
 |--|--|
 아직..|![Simulator Screenshot - iPhone 15 - 2024-05-27 at 04 48 28](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/16fad51b-9d6b-4019-a56f-ba185ff31423)
 
-## 8일차 과제 
+## 8회차 과제 
 ### 구현 리스트
 - [x] 1. 스토리보드 어트리뷰트 인스펙터 영역 사용하여 테이블뷰 구현
 - [x] 2. Dynamic Prototyps 활용하여 테이블뷰 구현
@@ -81,7 +81,7 @@
 |:---:|:---:|:---:|:---:|
 |![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 04 14 39](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/df809800-bb93-4a62-baa8-08259391efd9)|![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 04 39 20](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/6bc6a539-907b-47db-8242-ee8159a28618)|![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 04 14 42](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/738adf64-c4f8-46b4-99d4-64cb41d816ee)| ![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 04 39 23](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/c1e64531-47b9-432c-843c-b6ff91e2f752)
 
-## 9일차 과제
+## 9회차 과제
 ### 구현 리스트
 - [x] 1. 쇼핑 리스트 구현
   - addTarget 메서드 활용하여 할 일 완료/즐겨찾기 로직 구현
@@ -96,7 +96,7 @@
 |:---:|:---:|:---:|:---:|
 |![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 04 22 03](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/33e3e181-c977-42aa-9289-d9c52e5fe469)|![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 03 50 20](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/e4fbb2f9-090d-4fc2-bd04-7b7eca4a55d3)|![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 03 50 23](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/bfe11d19-ee6c-4f0b-b7ac-ed7280dec25f)|![Simulator Screenshot - iPhone 15 Pro - 2024-05-27 at 03 50 39](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/45771f50-48cc-4784-959d-f573d6de9ac4)|
 
-## 10일차 과제
+## 10회차 과제
 ### 구현 리스트
 - [x] 1. 인기 도시 화면 만들기
   - [x] 다중 XIB 활용하여 테이블 뷰 구성
@@ -110,4 +110,11 @@
  ![Simulator Screenshot - iPhone 15 - 2024-05-27 at 20 40 27](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/44a73713-5a92-4955-9d3c-e9a8c612fe91) | ![Simulator Screenshot - iPhone 15 - 2024-05-27 at 20 40 31](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/8e23c935-96b0-41ab-95ba-0ad2530dedf4)
 
  
+## 11회차 과제
+### 구현 리스트
+- [x] 트래블 매거진 로직 구성하기
+### 구현 화면
 
+## 12회차 과제
+### 구현 리스트
+### 구현 화면
