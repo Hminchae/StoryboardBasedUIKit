@@ -8,7 +8,7 @@
 import UIKit
 // 1. tableView 아울렛 선언
 // 2. tableView 부하직원 선언
-// 3. 부하직우너과 tableView 연결: 타입으로서의 Protocol
+// 3. 부하직원과 tableView 연결: 타입으로서의 Protocol
 // 4. XIB Cell: 여러 테이블 뷰에 재사용
 // 5. XIB
 class FoodViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate{
