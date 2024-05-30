@@ -66,22 +66,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2a-Ev-g2B">
-                                <rect key="frame" x="11" y="735" width="370" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2a-Ev-g2B">
+                                <rect key="frame" x="12" y="733" width="369" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zou-Ga-bBI"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="adButtonClicked:" destination="ogX-8v-c8W" eventType="touchUpInside" id="Evh-lw-5Fo"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F2Q-ia-qHN">
-                                <rect key="frame" x="0.0" y="83" width="393" height="611"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F2Q-ia-qHN">
+                                <rect key="frame" x="0.0" y="84" width="393" height="609"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0hl-lO-eIL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0hl-lO-eIL" firstAttribute="bottom" secondItem="P2a-Ev-g2B" secondAttribute="bottom" constant="25" id="AeI-3b-673"/>
+                            <constraint firstItem="P2a-Ev-g2B" firstAttribute="leading" secondItem="0hl-lO-eIL" secondAttribute="leading" constant="12" id="Wut-Bu-P02"/>
+                            <constraint firstItem="F2Q-ia-qHN" firstAttribute="top" secondItem="0hl-lO-eIL" secondAttribute="top" constant="25" id="YBp-yW-l5t"/>
+                            <constraint firstItem="F2Q-ia-qHN" firstAttribute="leading" secondItem="0hl-lO-eIL" secondAttribute="leading" id="bOg-tf-DWK"/>
+                            <constraint firstItem="P2a-Ev-g2B" firstAttribute="top" secondItem="F2Q-ia-qHN" secondAttribute="bottom" constant="40" id="drc-ey-3iw"/>
+                            <constraint firstItem="0hl-lO-eIL" firstAttribute="trailing" secondItem="P2a-Ev-g2B" secondAttribute="trailing" constant="12" id="m5Q-AS-fXj"/>
+                            <constraint firstItem="F2Q-ia-qHN" firstAttribute="trailing" secondItem="0hl-lO-eIL" secondAttribute="trailing" id="zPt-Ah-vFw"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="adButton" destination="P2a-Ev-g2B" id="Ubx-dY-7WX"/>
