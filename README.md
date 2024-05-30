@@ -54,7 +54,12 @@
   - [ ] 결과 확인 클릭 시 결과 Alert 띄우기
   - [ ] 랜덤 버튼 클릭시 임의의 숫자 계산하기
   - [ ] 들어갈 수 없는 값들을 핸들링하기
+  - [x] 오토레이아웃 구현
 ### 구현 화면
+| BMI 계산기 오토레이아웃 - SafeArea O | BMI 계산기 오토레이아웃 - SafeArea X |
+|--|--|
+<img width="392" alt="스크린샷 2024-05-29 오후 3 29 01" src="https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/5bb941f9-55c2-437e-837e-80f321417951"> | <img width="353" alt="스크린샷 2024-05-29 오후 3 29 27" src="https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/9f5804ec-63a1-4195-9243-1f94b36413bf">
+
 
 ## 7회차 과제
 ### 구현 리스트
@@ -112,9 +117,36 @@
  
 ## 11회차 과제
 ### 구현 리스트
-- [x] 트래블 매거진 로직 구성하기
+- [x] 트래블 매거진 로직 개선하기
+  - [x] 셀 높이 동적 할당 
 ### 구현 화면
+|홈 뷰 셀 높이 동적 할당|도시정보 뷰 셀 높이 동적 할당| 
+|--|--|
+![Simulator Screenshot - iPhone 15 - 2024-05-28 at 21 32 16](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/c06cf7cb-3600-4274-b62e-606d5e83a87c) | ![Simulator Screenshot - iPhone 15 - 2024-05-28 at 21 32 11](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/d10ce2e3-35cd-49ef-9ac4-58422d9cd63a)
 
 ## 12회차 과제
 ### 구현 리스트
+- [x] 화면 이동 구현하기
+  - [x] 관광지 화면 Show Push
+  - [x] 광고 화면 FullScreen Present
+- [ ] 여행 국가 탐색 화면 만들기  
 ### 구현 화면
+| 도시 상세 정보 | 관광지 화면 | 광고 화면 | 
+|--|--|--|
+![simulator_screenshot_F5C6B5DD-2BF9-41B0-B798-14D209FD9BCC](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/3020d8f9-8826-4717-8042-1543a8336121) | ![Simulator Screenshot - iPhone 15 - 2024-05-30 at 03 26 45](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/12165348-d985-4134-a06b-81786320abb4) | ![Simulator Screenshot - iPhone 15 - 2024-05-30 at 03 26 50](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/b46e33ba-f628-4c30-869a-9d37782c4162)
+
+
+
+## 13회차 과제
+### 구현 리스트
+- [x] 데이터 전달 학습하기 
+- [ ] Search Restaurant 디벨롭
+  - [x] 지도에 어노테이션 표기하기
+  - [ ] 세그먼트 컨트롤 만들고 해당하는 어노테이션만 표현하기
+  - [ ] 액션시트 이용
+### 구현 화면
+|도시 정보 -> 관광지 |도시정보 -> 광고화면 |
+|--|--|
+![Simulator Screenshot - iPhone 15 Pro - 2024-05-31 at 00 46 46](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/c8255d6b-d742-4075-818b-2c6ff8ddd99f) | ![Simulator Screenshot - iPhone 15 Pro - 2024-05-31 at 00 46 29](https://github.com/Hminchae/UIKitAndStoryboard/assets/103357078/8d2fc66d-aff4-457b-b300-6a18ac1d4d56)
+
+
