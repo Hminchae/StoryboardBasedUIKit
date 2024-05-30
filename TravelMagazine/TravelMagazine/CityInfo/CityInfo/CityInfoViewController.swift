@@ -52,6 +52,7 @@ extension CityInfoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let data = list[indexPath.row]
+        
         if !data.ad {
             let cell = tableView.dequeueReusableCell(withIdentifier: CityInfoTableViewCell.identifier, for: indexPath) as! CityInfoTableViewCell
             cell.configureCell(data: data)
@@ -65,11 +66,14 @@ extension CityInfoViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         
-        tableView.reloadRows(at: [indexPath], with: .automatic) // 화면 갔다가 다시 원래 셀의 모양을 돌려줘
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = list[indexPath.row]
+        
+        defer {
+            cityTableView.reloadRows(at: [indexPath], with: .automatic) // 화면 갔다가 다시 원래 셀의 모양을 돌려줘
+        }
         
         if data.ad {
             let vc = storyboard?.instantiateViewController(withIdentifier: "AdViewController") as! AdViewController
@@ -81,13 +85,14 @@ extension CityInfoViewController: UITableViewDelegate, UITableViewDataSource {
             present(nav, animated: true)
             
         } else {
-            let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
-            backBarButtonItem.tintColor = .black
-            self.navigationItem.backBarButtonItem = backBarButtonItem
-            
             let vc = storyboard?.instantiateViewController(withIdentifier: "CityInfoDetailViewController") as! CityInfoDetailViewController
-   
-            navigationController?.pushViewController(vc, animated: true)
+            
+            vc.cityDetailData = data // 데이터 전달
+            
+            vc.modalPresentationStyle = .automatic
+            vc.modalTransitionStyle = .coverVertical
+            
+            present(vc, animated: true)
         }
     }
 }

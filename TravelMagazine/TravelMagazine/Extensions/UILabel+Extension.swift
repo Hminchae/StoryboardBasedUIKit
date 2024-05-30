@@ -34,10 +34,10 @@ extension UILabel {
     }
     
     func setSecndaryLabel() {
-        self.font = UIFont(name: "Pretendard-Bold", size: 15)
+        self.font = UIFont(name: "Pretendard-Medium", size: 15)
         self.textAlignment = .left
         self.textColor = .lightGray
-        self.numberOfLines = 0
+        self.numberOfLines = 3
     }
     
     func setSmallLabel() {
