@@ -8,7 +8,7 @@
 import UIKit
 
 class AdTableViewCell: UITableViewCell {
-    static let identifier = "AdTableViewCell"
+    //static let identifier = "AdTableViewCell"
     
     @IBOutlet weak var adTitleLabel: UILabel!
     @IBOutlet weak var adBadgeLabel: UILabel!

@@ -10,42 +10,67 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="TravelChatTableViewCell" customModule="TravelMagazine" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="89"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TravelChatTableViewCell" rowHeight="87" id="KGk-i7-Jjw" customClass="TravelChatTableViewCell" customModule="TravelMagazine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="87"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="393" height="89"/>
+                <rect key="frame" x="0.0" y="0.0" width="279" height="87"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FTj-5t-aOW">
-                        <rect key="frame" x="14" y="19" width="50" height="50"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FTj-5t-aOW">
+                        <rect key="frame" x="16" y="20" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="A8x-9Z-5Dt"/>
+                            <constraint firstAttribute="width" constant="50" id="b8w-X7-Hyk"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thanky" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fy-Ug-Gfp">
-                        <rect key="frame" x="72" y="19" width="56" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanky" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fy-Ug-Gfp">
+                        <rect key="frame" x="74" y="20" width="56" height="25"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="저 오늘 예지님이랑 코딩하러 왔어요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DX0-z4-0gC">
-                        <rect key="frame" x="72" y="48" width="306" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="저 오늘 예지님이랑 코딩하러 왔어요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DX0-z4-0gC">
+                        <rect key="frame" x="74" y="55" width="189" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="pAM-ti-K1B"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="24.01.30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17e-ae-2EE">
-                        <rect key="frame" x="293" y="19" width="85" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88.88.88" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17e-ae-2EE">
+                        <rect key="frame" x="193.33333333333334" y="20" width="69.666666666666657" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9C4-eu-cgc"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="8fy-Ug-Gfp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="6L4-e1-TGV"/>
+                    <constraint firstAttribute="trailing" secondItem="17e-ae-2EE" secondAttribute="trailing" constant="16" id="6Xb-mE-26R"/>
+                    <constraint firstItem="DX0-z4-0gC" firstAttribute="top" secondItem="8fy-Ug-Gfp" secondAttribute="bottom" constant="10" id="HcX-Gn-jF9"/>
+                    <constraint firstItem="FTj-5t-aOW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="IaT-Sa-zxh"/>
+                    <constraint firstAttribute="trailing" secondItem="DX0-z4-0gC" secondAttribute="trailing" constant="16" id="MHQ-AG-75i"/>
+                    <constraint firstItem="8fy-Ug-Gfp" firstAttribute="leading" secondItem="FTj-5t-aOW" secondAttribute="trailing" constant="8" id="NC1-WR-erl"/>
+                    <constraint firstItem="DX0-z4-0gC" firstAttribute="leading" secondItem="FTj-5t-aOW" secondAttribute="trailing" constant="8" id="Qfk-pu-Ytr"/>
+                    <constraint firstItem="FTj-5t-aOW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Tsp-up-g5L"/>
+                    <constraint firstItem="8fy-Ug-Gfp" firstAttribute="top" secondItem="17e-ae-2EE" secondAttribute="top" id="bGv-hR-wRc"/>
+                    <constraint firstAttribute="bottom" secondItem="DX0-z4-0gC" secondAttribute="bottom" constant="12" id="f80-SU-WkW"/>
+                    <constraint firstItem="17e-ae-2EE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="fv9-tq-mZW"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="142.74809160305344" y="14.43661971830986"/>
+            <connections>
+                <outlet property="chatRoomMainImage" destination="FTj-5t-aOW" id="i5a-4B-tk4"/>
+                <outlet property="chatRoomNameLabel" destination="8fy-Ug-Gfp" id="fHb-VW-qrU"/>
+                <outlet property="chatRoomRecentContentLabel" destination="DX0-z4-0gC" id="ZvW-jq-rjG"/>
+                <outlet property="chatRoomRecentTimeLabel" destination="17e-ae-2EE" id="tJD-El-nd1"/>
+            </connections>
+            <point key="canvasLocation" x="54.198473282442748" y="13.732394366197184"/>
         </tableViewCell>
     </objects>
 </document>

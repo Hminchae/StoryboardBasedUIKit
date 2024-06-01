@@ -18,21 +18,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MZ-5U-yAG">
-                                <rect key="frame" x="8" y="64" width="377" height="35"/>
+                                <rect key="frame" x="16" y="64" width="361" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvq-hy-fmE">
-                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="dh8-fJ-XUy"/>
+                                            <constraint firstAttribute="height" constant="40" id="dh8-fJ-XUy"/>
                                             <constraint firstAttribute="width" constant="35" id="s7l-nY-6Je"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="686-kd-7q7">
-                                        <rect key="frame" x="35" y="0.0" width="342" height="35"/>
+                                        <rect key="frame" x="35" y="0.0" width="326" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="KsN-tn-fTA"/>
+                                            <constraint firstAttribute="height" constant="40" id="KsN-tn-fTA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -47,11 +47,11 @@
                                     <constraint firstAttribute="trailing" secondItem="686-kd-7q7" secondAttribute="trailing" id="vc9-bs-qyH"/>
                                     <constraint firstItem="mvq-hy-fmE" firstAttribute="leading" secondItem="7MZ-5U-yAG" secondAttribute="leading" id="yKL-en-8DQ"/>
                                     <constraint firstAttribute="bottom" secondItem="mvq-hy-fmE" secondAttribute="bottom" id="yVB-kn-NGk"/>
-                                    <constraint firstAttribute="height" constant="35" id="zoB-HC-7mI"/>
+                                    <constraint firstAttribute="height" constant="40" id="zoB-HC-7mI"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rvt-IA-l4d">
-                                <rect key="frame" x="0.0" y="137" width="393" height="632"/>
+                                <rect key="frame" x="0.0" y="150" width="393" height="619"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -70,8 +70,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7MZ-5U-yAG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="DRL-ZA-erc"/>
-                            <constraint firstItem="7MZ-5U-yAG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="clH-zc-X8P"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7MZ-5U-yAG" secondAttribute="trailing" constant="8" id="kid-n5-HBV"/>
+                            <constraint firstItem="7MZ-5U-yAG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="clH-zc-X8P"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7MZ-5U-yAG" secondAttribute="trailing" constant="16" id="kid-n5-HBV"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Travel Chat" image="ellipsis.message" catalog="system" id="LrP-L0-oOm"/>
@@ -80,6 +80,7 @@
                         <outlet property="searchBarView" destination="7MZ-5U-yAG" id="32Q-Ji-bEa"/>
                         <outlet property="searchButton" destination="mvq-hy-fmE" id="m3z-Sn-0gT"/>
                         <outlet property="searchTextField" destination="686-kd-7q7" id="RSx-Wf-hfe"/>
+                        <outlet property="tableView" destination="Rvt-IA-l4d" id="ShW-Y1-J6h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

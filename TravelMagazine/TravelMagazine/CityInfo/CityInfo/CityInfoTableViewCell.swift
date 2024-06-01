@@ -10,7 +10,7 @@ import Cosmos
 import Kingfisher
 
 class CityInfoTableViewCell: UITableViewCell {
-    static let identifier = "CityInfoTableViewCell"
+    //static let identifier = "CityInfoTableViewCell"
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
