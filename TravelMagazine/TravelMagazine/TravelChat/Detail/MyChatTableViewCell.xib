@@ -19,10 +19,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0R-8g-coJ">
-                        <rect key="frame" x="113" y="8" width="137" height="125"/>
+                        <rect key="frame" x="113" y="16" width="137" height="109"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아니 ~~ 과제 너무 어려워요 어려워요 ,,," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lle-ES-4j9">
-                                <rect key="frame" x="3" y="3" width="131" height="119"/>
+                                <rect key="frame" x="7" y="7" width="123" height="95"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,14 +30,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Lle-ES-4j9" secondAttribute="trailing" constant="3" id="616-9H-nDv"/>
-                            <constraint firstAttribute="bottom" secondItem="Lle-ES-4j9" secondAttribute="bottom" constant="3" id="Gzr-7k-Yvz"/>
-                            <constraint firstItem="Lle-ES-4j9" firstAttribute="leading" secondItem="Q0R-8g-coJ" secondAttribute="leading" constant="3" id="YLp-I5-Svr"/>
-                            <constraint firstItem="Lle-ES-4j9" firstAttribute="top" secondItem="Q0R-8g-coJ" secondAttribute="top" constant="3" id="fh3-tI-zEh"/>
+                            <constraint firstAttribute="trailing" secondItem="Lle-ES-4j9" secondAttribute="trailing" constant="7" id="616-9H-nDv"/>
+                            <constraint firstAttribute="bottom" secondItem="Lle-ES-4j9" secondAttribute="bottom" constant="7" id="Gzr-7k-Yvz"/>
+                            <constraint firstItem="Lle-ES-4j9" firstAttribute="leading" secondItem="Q0R-8g-coJ" secondAttribute="leading" constant="7" id="YLp-I5-Svr"/>
+                            <constraint firstItem="Lle-ES-4j9" firstAttribute="top" secondItem="Q0R-8g-coJ" secondAttribute="top" constant="7" id="fh3-tI-zEh"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88:88 오후" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P1-uq-xEX">
-                        <rect key="frame" x="30" y="113" width="81" height="20"/>
+                        <rect key="frame" x="30" y="105" width="81" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="iI2-wa-qfB"/>
                             <constraint firstAttribute="width" constant="81" id="vGX-p1-aeK"/>
@@ -49,14 +49,19 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="Q0R-8g-coJ" firstAttribute="leading" secondItem="8P1-uq-xEX" secondAttribute="trailing" constant="2" id="0dr-7u-U42"/>
-                    <constraint firstAttribute="bottom" secondItem="8P1-uq-xEX" secondAttribute="bottom" constant="8" id="2um-gL-1IF"/>
-                    <constraint firstAttribute="bottom" secondItem="Q0R-8g-coJ" secondAttribute="bottom" constant="8" id="49T-zl-Iaq"/>
-                    <constraint firstItem="Q0R-8g-coJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Obh-o8-wBz"/>
+                    <constraint firstAttribute="bottom" secondItem="8P1-uq-xEX" secondAttribute="bottom" constant="16" id="2um-gL-1IF"/>
+                    <constraint firstAttribute="bottom" secondItem="Q0R-8g-coJ" secondAttribute="bottom" constant="16" id="49T-zl-Iaq"/>
+                    <constraint firstItem="Q0R-8g-coJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Obh-o8-wBz"/>
                     <constraint firstItem="8P1-uq-xEX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="gNd-Di-YXN"/>
                     <constraint firstAttribute="trailing" secondItem="Q0R-8g-coJ" secondAttribute="trailing" constant="8" id="lYL-uV-Rlp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myChatBubbleView" destination="Q0R-8g-coJ" id="uz3-gU-Pgv"/>
+                <outlet property="myChatContentLabel" destination="Lle-ES-4j9" id="jBj-ni-H6w"/>
+                <outlet property="myChatTimeLabel" destination="8P1-uq-xEX" id="VfF-YZ-TUK"/>
+            </connections>
             <point key="canvasLocation" x="18.320610687022899" y="105.28169014084507"/>
         </tableViewCell>
     </objects>

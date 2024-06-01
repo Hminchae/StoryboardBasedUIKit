@@ -39,7 +39,21 @@ extension TravelChatViewController {
     }
 }
 extension TravelChatViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = list[indexPath.row]
+        
+        defer {
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+        }
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailTravelChatViewController") as! DetailTravelChatViewController
+        
+        print(data.chatList)
+        vc.chatList = data.chatList
+        let nav = UINavigationController(rootViewController: vc)
+        
+        present(nav, animated: true)
+    }
 }
 
 extension TravelChatViewController: UITableViewDataSource {
