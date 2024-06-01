@@ -9,14 +9,13 @@ import UIKit
 import Kingfisher
 
 class HomeTableViewController: UITableViewController {
-    @IBOutlet weak var homeNavgationTitle: UINavigationBar!
     
     var magazineInfo : [Magazine] = MagazineInfo().magazine
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "SeSAC TRAVEL"
         tableView.separatorStyle = .none // 테이블뷰 separator 없애기
-        homeNavgationTitle.barTintColor = .systemBackground
         tableView.rowHeight = UITableView.automaticDimension
     }
     

@@ -8,23 +8,22 @@
 import UIKit
 
 class CityInfoViewController: UIViewController {
-    
-    @IBOutlet weak var cityNavBar: UINavigationBar!
+  
     @IBOutlet weak var cityTableView: UITableView!
     
     var list = TravelInfo().travel
   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "도시 정보"
+        configureTableView()
+    }
+    
     // 하트 클릭 로직
     @objc func heartButtonClicked(_ sender: UIButton) {
         let index = sender.tag
         list[index].like?.toggle()
         cityTableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .bottom)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        configureTableView()
     }
 }
 

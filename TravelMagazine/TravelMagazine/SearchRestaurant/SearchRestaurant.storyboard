@@ -36,6 +36,14 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VIn-9Y-xLE">
+                                <rect key="frame" x="131" y="59" width="131" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vqT-Bt-EDa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -48,9 +56,10 @@
                             <constraint firstItem="vqT-Bt-EDa" firstAttribute="trailing" secondItem="HEB-5u-I4J" secondAttribute="trailing" constant="20" id="veq-9z-dzi"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="맛집 정보" image="fork.knife" catalog="system" id="vow-9W-c9A"/>
+                    <tabBarItem key="tabBarItem" title="맛집 정보" image="fork.knife.circle" catalog="system" id="vow-9W-c9A"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="categorySeg" destination="VIn-9Y-xLE" id="SWV-8l-rJ8"/>
                         <outlet property="myMap" destination="iiU-c8-NyU" id="s89-au-dnT"/>
                         <outlet property="storeListButton" destination="HEB-5u-I4J" id="cd0-7E-L7F"/>
                     </connections>
@@ -338,7 +347,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fork.knife" catalog="system" width="94" height="128"/>
+        <image name="fork.knife.circle" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
