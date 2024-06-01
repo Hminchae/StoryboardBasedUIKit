@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		B122F12A2C0AED59001B7D0B /* TravelChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122F1282C0AED59001B7D0B /* TravelChatTableViewCell.swift */; };
 		B122F12B2C0AED59001B7D0B /* TravelChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B122F1292C0AED59001B7D0B /* TravelChatTableViewCell.xib */; };
+		B122F12E2C0AF6E6001B7D0B /* OthersChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122F12C2C0AF6E6001B7D0B /* OthersChatTableViewCell.swift */; };
+		B122F12F2C0AF6E6001B7D0B /* OthersChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B122F12D2C0AF6E6001B7D0B /* OthersChatTableViewCell.xib */; };
+		B122F1322C0AF6F8001B7D0B /* MyChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122F1302C0AF6F8001B7D0B /* MyChatTableViewCell.swift */; };
+		B122F1332C0AF6F8001B7D0B /* MyChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B122F1312C0AF6F8001B7D0B /* MyChatTableViewCell.xib */; };
+		B122F1352C0AF749001B7D0B /* DetailTravelChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122F1342C0AF749001B7D0B /* DetailTravelChatViewController.swift */; };
 		B15721FA2C0AD97C00D1CE59 /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15721F92C0AD97C00D1CE59 /* ChattingData.swift */; };
 		B15721FC2C0ADA5900D1CE59 /* TravelChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15721FB2C0ADA5900D1CE59 /* TravelChat.storyboard */; };
 		B15721FE2C0ADA8700D1CE59 /* TravelChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15721FD2C0ADA8700D1CE59 /* TravelChatViewController.swift */; };
@@ -56,6 +61,11 @@
 /* Begin PBXFileReference section */
 		B122F1282C0AED59001B7D0B /* TravelChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelChatTableViewCell.swift; sourceTree = "<group>"; };
 		B122F1292C0AED59001B7D0B /* TravelChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelChatTableViewCell.xib; sourceTree = "<group>"; };
+		B122F12C2C0AF6E6001B7D0B /* OthersChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersChatTableViewCell.swift; sourceTree = "<group>"; };
+		B122F12D2C0AF6E6001B7D0B /* OthersChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OthersChatTableViewCell.xib; sourceTree = "<group>"; };
+		B122F1302C0AF6F8001B7D0B /* MyChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatTableViewCell.swift; sourceTree = "<group>"; };
+		B122F1312C0AF6F8001B7D0B /* MyChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChatTableViewCell.xib; sourceTree = "<group>"; };
+		B122F1342C0AF749001B7D0B /* DetailTravelChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTravelChatViewController.swift; sourceTree = "<group>"; };
 		B15721F92C0AD97C00D1CE59 /* ChattingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
 		B15721FB2C0ADA5900D1CE59 /* TravelChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TravelChat.storyboard; sourceTree = "<group>"; };
 		B15721FD2C0ADA8700D1CE59 /* TravelChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelChatViewController.swift; sourceTree = "<group>"; };
@@ -113,14 +123,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B122F1362C0AF758001B7D0B /* main */ = {
+			isa = PBXGroup;
+			children = (
+				B15721FB2C0ADA5900D1CE59 /* TravelChat.storyboard */,
+				B15721FD2C0ADA8700D1CE59 /* TravelChatViewController.swift */,
+				B122F1292C0AED59001B7D0B /* TravelChatTableViewCell.xib */,
+				B122F1282C0AED59001B7D0B /* TravelChatTableViewCell.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		B122F1372C0AF761001B7D0B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B122F1342C0AF749001B7D0B /* DetailTravelChatViewController.swift */,
+				B122F1312C0AF6F8001B7D0B /* MyChatTableViewCell.xib */,
+				B122F1302C0AF6F8001B7D0B /* MyChatTableViewCell.swift */,
+				B122F12D2C0AF6E6001B7D0B /* OthersChatTableViewCell.xib */,
+				B122F12C2C0AF6E6001B7D0B /* OthersChatTableViewCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		B15721F82C0AD95900D1CE59 /* TravelChat */ = {
 			isa = PBXGroup;
 			children = (
 				B15721F92C0AD97C00D1CE59 /* ChattingData.swift */,
-				B15721FB2C0ADA5900D1CE59 /* TravelChat.storyboard */,
-				B15721FD2C0ADA8700D1CE59 /* TravelChatViewController.swift */,
-				B122F1282C0AED59001B7D0B /* TravelChatTableViewCell.swift */,
-				B122F1292C0AED59001B7D0B /* TravelChatTableViewCell.xib */,
+				B122F1372C0AF761001B7D0B /* Detail */,
+				B122F1362C0AF758001B7D0B /* main */,
 			);
 			path = TravelChat;
 			sourceTree = "<group>";
@@ -311,6 +342,7 @@
 			files = (
 				B15721FC2C0ADA5900D1CE59 /* TravelChat.storyboard in Resources */,
 				B18257C82C025A10003926A7 /* Pretendard-ExtraLight.otf in Resources */,
+				B122F1332C0AF6F8001B7D0B /* MyChatTableViewCell.xib in Resources */,
 				B18257A12C0228B0003926A7 /* LaunchScreen.storyboard in Resources */,
 				B189AAEF2C046383008A11D9 /* CityInfoTableViewCell.xib in Resources */,
 				B189AAF32C04638F008A11D9 /* AdTableViewCell.xib in Resources */,
@@ -321,6 +353,7 @@
 				B18257CA2C025A10003926A7 /* Pretendard-Black.otf in Resources */,
 				B182579E2C0228B0003926A7 /* Assets.xcassets in Resources */,
 				B18257B32C022DB8003926A7 /* SearchRestaurant.storyboard in Resources */,
+				B122F12F2C0AF6E6001B7D0B /* OthersChatTableViewCell.xib in Resources */,
 				B18257CF2C025A10003926A7 /* Pretendard-Bold.otf in Resources */,
 				B182579C2C0228AE003926A7 /* Main.storyboard in Resources */,
 				B18257CE2C025A10003926A7 /* Pretendard-Thin.otf in Resources */,
@@ -351,9 +384,12 @@
 				B15721FA2C0AD97C00D1CE59 /* ChattingData.swift in Sources */,
 				B18257952C0228AE003926A7 /* AppDelegate.swift in Sources */,
 				B122F12A2C0AED59001B7D0B /* TravelChatTableViewCell.swift in Sources */,
+				B122F1352C0AF749001B7D0B /* DetailTravelChatViewController.swift in Sources */,
 				B18257D12C0265CA003926A7 /* SearchRestaurantTableViewCell.swift in Sources */,
+				B122F1322C0AF6F8001B7D0B /* MyChatTableViewCell.swift in Sources */,
 				B189AAFA2C047448008A11D9 /* UIImageView+Extension.swift in Sources */,
 				B15721FE2C0ADA8700D1CE59 /* TravelChatViewController.swift in Sources */,
+				B122F12E2C0AF6E6001B7D0B /* OthersChatTableViewCell.swift in Sources */,
 				B18257972C0228AE003926A7 /* SceneDelegate.swift in Sources */,
 				B18257B72C023C5B003926A7 /* HomeTableViewCell.swift in Sources */,
 				B1A7A9A62C079F3E007CF0FE /* AdViewController.swift in Sources */,
