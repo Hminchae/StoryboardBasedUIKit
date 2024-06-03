@@ -17,6 +17,13 @@
 		B122F19B2C0CB35B001B7D0B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122F19A2C0CB35B001B7D0B /* HomeViewController.swift */; };
 		B122F19E2C0CB462001B7D0B /* HomeVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122F19C2C0CB462001B7D0B /* HomeVideoTableViewCell.swift */; };
 		B122F19F2C0CB462001B7D0B /* HomeVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B122F19D2C0CB462001B7D0B /* HomeVideoTableViewCell.xib */; };
+		B1972EF42C0DAD520004AE2C /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972EF32C0DAD520004AE2C /* ReusableProtocol.swift */; };
+		B1972EF72C0DAFA90004AE2C /* HomeHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972EF52C0DAFA90004AE2C /* HomeHeaderTableViewCell.swift */; };
+		B1972EF82C0DAFA90004AE2C /* HomeHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1972EF62C0DAFA90004AE2C /* HomeHeaderTableViewCell.xib */; };
+		B1972EFB2C0DAFBD0004AE2C /* HomeRecomendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972EF92C0DAFBD0004AE2C /* HomeRecomendTableViewCell.swift */; };
+		B1972EFC2C0DAFBD0004AE2C /* HomeRecomendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1972EFA2C0DAFBD0004AE2C /* HomeRecomendTableViewCell.xib */; };
+		B1972EFF2C0DB01D0004AE2C /* HomeFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972EFD2C0DB01D0004AE2C /* HomeFooterTableViewCell.swift */; };
+		B1972F002C0DB01D0004AE2C /* HomeFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1972EFE2C0DB01D0004AE2C /* HomeFooterTableViewCell.xib */; };
 		B1BF236F2C0CCC6C0083C145 /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BF236E2C0CCC6C0083C145 /* HomeSection.swift */; };
 		B1BF23712C0CD3070083C145 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BF23702C0CD3070083C145 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +41,13 @@
 		B122F19A2C0CB35B001B7D0B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B122F19C2C0CB462001B7D0B /* HomeVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVideoTableViewCell.swift; sourceTree = "<group>"; };
 		B122F19D2C0CB462001B7D0B /* HomeVideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVideoTableViewCell.xib; sourceTree = "<group>"; };
+		B1972EF32C0DAD520004AE2C /* ReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProtocol.swift; sourceTree = "<group>"; };
+		B1972EF52C0DAFA90004AE2C /* HomeHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		B1972EF62C0DAFA90004AE2C /* HomeHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		B1972EF92C0DAFBD0004AE2C /* HomeRecomendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecomendTableViewCell.swift; sourceTree = "<group>"; };
+		B1972EFA2C0DAFBD0004AE2C /* HomeRecomendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeRecomendTableViewCell.xib; sourceTree = "<group>"; };
+		B1972EFD2C0DB01D0004AE2C /* HomeFooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFooterTableViewCell.swift; sourceTree = "<group>"; };
+		B1972EFE2C0DB01D0004AE2C /* HomeFooterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFooterTableViewCell.xib; sourceTree = "<group>"; };
 		B1BF236E2C0CCC6C0083C145 /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		B1BF23702C0CD3070083C145 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +82,7 @@
 		B122F1472C0C6F46001B7D0B /* KStreaming */ = {
 			isa = PBXGroup;
 			children = (
+				B1972EF22C0DAD1F0004AE2C /* Protocols */,
 				B1BF23702C0CD3070083C145 /* TabBarController.swift */,
 				B122F1992C0CB34C001B7D0B /* Home */,
 				B122F1962C0CB157001B7D0B /* Login */,
@@ -103,10 +118,24 @@
 		B122F1A02C0CB466001B7D0B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				B1972EF52C0DAFA90004AE2C /* HomeHeaderTableViewCell.swift */,
+				B1972EF62C0DAFA90004AE2C /* HomeHeaderTableViewCell.xib */,
 				B122F19C2C0CB462001B7D0B /* HomeVideoTableViewCell.swift */,
 				B122F19D2C0CB462001B7D0B /* HomeVideoTableViewCell.xib */,
+				B1972EF92C0DAFBD0004AE2C /* HomeRecomendTableViewCell.swift */,
+				B1972EFA2C0DAFBD0004AE2C /* HomeRecomendTableViewCell.xib */,
+				B1972EFD2C0DB01D0004AE2C /* HomeFooterTableViewCell.swift */,
+				B1972EFE2C0DB01D0004AE2C /* HomeFooterTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		B1972EF22C0DAD1F0004AE2C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B1972EF32C0DAD520004AE2C /* ReusableProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,10 +197,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B122F1552C0C6F48001B7D0B /* LaunchScreen.storyboard in Resources */,
+				B1972EFC2C0DAFBD0004AE2C /* HomeRecomendTableViewCell.xib in Resources */,
 				B122F1952C0CA974001B7D0B /* Color.xcassets in Resources */,
 				B122F19F2C0CB462001B7D0B /* HomeVideoTableViewCell.xib in Resources */,
 				B122F1522C0C6F48001B7D0B /* Assets.xcassets in Resources */,
 				B122F1502C0C6F46001B7D0B /* Main.storyboard in Resources */,
+				B1972EF82C0DAFA90004AE2C /* HomeHeaderTableViewCell.xib in Resources */,
+				B1972F002C0DB01D0004AE2C /* HomeFooterTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,10 +216,14 @@
 			files = (
 				B122F14D2C0C6F46001B7D0B /* LoginViewController.swift in Sources */,
 				B122F19E2C0CB462001B7D0B /* HomeVideoTableViewCell.swift in Sources */,
+				B1972EF72C0DAFA90004AE2C /* HomeHeaderTableViewCell.swift in Sources */,
 				B1BF236F2C0CCC6C0083C145 /* HomeSection.swift in Sources */,
 				B122F1492C0C6F46001B7D0B /* AppDelegate.swift in Sources */,
+				B1972EFB2C0DAFBD0004AE2C /* HomeRecomendTableViewCell.swift in Sources */,
+				B1972EFF2C0DB01D0004AE2C /* HomeFooterTableViewCell.swift in Sources */,
 				B1BF23712C0CD3070083C145 /* TabBarController.swift in Sources */,
 				B122F14B2C0C6F46001B7D0B /* SceneDelegate.swift in Sources */,
+				B1972EF42C0DAD520004AE2C /* ReusableProtocol.swift in Sources */,
 				B122F19B2C0CB35B001B7D0B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,8 +382,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -379,8 +415,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

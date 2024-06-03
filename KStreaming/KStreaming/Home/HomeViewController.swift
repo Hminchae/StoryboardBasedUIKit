@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+extension HomeViewController: UITableViewDataSource {
 
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -70,4 +70,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             )
         }
     }
+}
+
+extension HomeViewController: UITableViewDelegate {
+    
 }

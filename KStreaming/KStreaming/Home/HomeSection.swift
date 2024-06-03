@@ -8,5 +8,8 @@
 import Foundation
 
 enum HomeSection: Int, CaseIterable {
-    case video 
+    case header
+    case video
+    case recomend
+    case footer
 }

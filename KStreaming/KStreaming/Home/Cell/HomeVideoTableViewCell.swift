@@ -9,7 +9,6 @@ import UIKit
 
 class HomeVideoTableViewCell: UITableViewCell {
     
-    static let identifier: String = "HomeVideoTableViewCell"
     static let height: CGFloat = 321
     
     @IBOutlet weak var containerView: UIView!
