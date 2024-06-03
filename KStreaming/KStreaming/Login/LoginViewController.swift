@@ -7,10 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,7 +21,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonDidTap(_ sender: Any) {
-            
+        self.view.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "TabBar")
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        .portrait
     }
     
 }
