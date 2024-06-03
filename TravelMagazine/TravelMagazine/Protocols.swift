@@ -7,12 +7,11 @@
 
 import UIKit
 
-protocol ReuseIdentifierProtocol {
+protocol ReuseIdentifierProtocol: AnyObject {
     static var identifier: String { get }
 }
 
 extension UITableViewController : ReuseIdentifierProtocol {
-    
     static var identifier: String {
         return String(describing: self)
     }

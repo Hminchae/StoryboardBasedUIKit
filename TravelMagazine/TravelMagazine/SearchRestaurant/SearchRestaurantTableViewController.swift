@@ -31,7 +31,7 @@ class SearchRestaurantTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         SearchRestaurantTitle.text = "맛집 정보"
-        SearchRestaurantTitle.font = UIFont(name: "Pretendard-SemiBold", size: 28)
+        SearchRestaurantTitle.font = UIFont.pretendard(size: 28, weight: .semibold)
         
         searchTextfieldView.backgroundColor = .lightGray.withAlphaComponent(0.2)
         searchTextfieldView.layer.cornerRadius = 5
@@ -75,7 +75,7 @@ class SearchRestaurantTableViewController: UITableViewController {
         
         // 음식점 명
         cell.storeTitle.text = store.name
-        cell.storeTitle.font = UIFont(name: "Pretendard-SemiBold", size: 16)
+        cell.storeTitle.font = UIFont.pretendard(size: 16, weight: .semibold)
         
         // 주소 버튼 클릭 시
         cell.addressButton.addTarget(self, action: #selector(addressButtonClicked), for: .touchUpInside)
@@ -87,7 +87,7 @@ class SearchRestaurantTableViewController: UITableViewController {
         
         // 음식점 카테고리 & 가격
         cell.storeCategory.text = "\(store.category)﹒대표메뉴 가격: \(String(store.price))원"
-        cell.storeCategory.font = UIFont(name: "Pretendard-Medium", size: 13)
+        cell.storeCategory.font = UIFont.pretendard(size: 13, weight: .medium)
         cell.storeCategory.textColor = .lightGray
         
         cell.storeStarButton.addTarget(self, action: #selector(bookMarkButtonClicked), for: .touchUpInside)
@@ -147,7 +147,7 @@ class SearchRestaurantTableViewController: UITableViewController {
     // 카테고리 검색 버튼 디자인 함수
     func designCategoryButton(categoryButtonName button: UIButton, _ categoryName: String) {
         button.setTitle(categoryName, for: .normal)
-        button.titleLabel?.font = UIFont(name: "Pretendard-Medium", size: 13)
+        button.titleLabel?.font = UIFont.pretendard(size: 13, weight: .medium)
         button.setTitleColor(.label, for: .normal)
         button.layer.cornerRadius = 5
         button.backgroundColor = .white.withAlphaComponent(0.1)

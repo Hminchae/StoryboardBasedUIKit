@@ -80,8 +80,8 @@ extension CityInfoDetailViewController {
         
         cityMainImage.contentMode = .scaleAspectFill
         
-        cityNameLabel.font = UIFont(name: "Pretendard-SemiBold", size: 24)
-        cityDescriptionLabel.font = UIFont(name: "Pretendard-Regular", size: 17)
+        cityNameLabel.font = UIFont.pretendard(size: 24, weight: .semibold)
+        cityDescriptionLabel.font = UIFont.pretendard(size: 17, weight: .regular)
         cityDescriptionLabel.textColor = .lightGray
         cityLocationLabel.text = "위치 미리보기"
         cityLocationLabel.textColor = .label

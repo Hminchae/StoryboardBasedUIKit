@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--맛집 정보-->
+        <!--Search Restaurant View Controller-->
         <scene sceneID="Nmw-JP-2kr">
             <objects>
                 <viewController id="Gha-rt-yTY" customClass="SearchRestaurantViewController" customModule="TravelMagazine" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,7 +56,6 @@
                             <constraint firstItem="vqT-Bt-EDa" firstAttribute="trailing" secondItem="HEB-5u-I4J" secondAttribute="trailing" constant="20" id="veq-9z-dzi"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="맛집 정보" image="fork.knife.circle" catalog="system" id="vow-9W-c9A"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="categorySeg" destination="VIn-9Y-xLE" id="SWV-8l-rJ8"/>
@@ -347,7 +346,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fork.knife.circle" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

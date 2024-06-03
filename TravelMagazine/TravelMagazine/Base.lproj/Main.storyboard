@@ -68,11 +68,11 @@
             </objects>
             <point key="canvasLocation" x="2624" y="1856"/>
         </scene>
-        <!--Item-->
+        <!--City Info-->
         <scene sceneID="MQu-qF-X0u">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CFa-aq-aKu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="WZa-iA-0zJ"/>
+                    <tabBarItem key="tabBarItem" title="City Info" image="globe.europe.africa" catalog="system" selectedImage="globe.europe.africa.fill" id="WZa-iA-0zJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="kay-YC-Eme">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
@@ -87,11 +87,11 @@
             </objects>
             <point key="canvasLocation" x="1731" y="237"/>
         </scene>
-        <!--Item-->
+        <!--Restaurant map-->
         <scene sceneID="occ-nv-J07">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="14R-vs-mfE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6Nt-OR-Bti"/>
+                    <tabBarItem key="tabBarItem" title="Restaurant map" image="mappin.and.ellipse.circle" catalog="system" selectedImage="mappin.and.ellipse.circle.fill" id="6Nt-OR-Bti"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GkE-dj-yrH">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -106,11 +106,11 @@
             </objects>
             <point key="canvasLocation" x="1731" y="980"/>
         </scene>
-        <!--Item-->
+        <!--Megazine-->
         <scene sceneID="q2A-0n-oeE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4N8-zj-wWs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Xei-Gr-vj3"/>
+                    <tabBarItem key="tabBarItem" title="Megazine" image="bubbles.and.sparkles" catalog="system" selectedImage="bubbles.and.sparkles.fill" id="Xei-Gr-vj3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="gFa-vj-kjd">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
@@ -125,14 +125,14 @@
             </objects>
             <point key="canvasLocation" x="1730.534351145038" y="-454.22535211267609"/>
         </scene>
-        <!--Item-->
+        <!--Travel Chat-->
         <scene sceneID="DvV-Ae-Hha">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QGY-zO-zmM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="2PF-j2-hLt"/>
+                    <tabBarItem key="tabBarItem" title="Travel Chat" image="bubble.left.and.bubble.right" catalog="system" selectedImage="bubble.left.and.bubble.right.fill" id="2PF-j2-hLt"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qgR-Ap-NNQ">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="qgR-Ap-NNQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -145,4 +145,14 @@
             <point key="canvasLocation" x="1731" y="1856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bubble.left.and.bubble.right" catalog="system" width="128" height="96"/>
+        <image name="bubble.left.and.bubble.right.fill" catalog="system" width="128" height="102"/>
+        <image name="bubbles.and.sparkles" catalog="system" width="128" height="112"/>
+        <image name="bubbles.and.sparkles.fill" catalog="system" width="128" height="112"/>
+        <image name="globe.europe.africa" catalog="system" width="128" height="123"/>
+        <image name="globe.europe.africa.fill" catalog="system" width="128" height="123"/>
+        <image name="mappin.and.ellipse.circle" catalog="system" width="128" height="123"/>
+        <image name="mappin.and.ellipse.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
 </document>

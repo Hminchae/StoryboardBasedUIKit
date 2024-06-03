@@ -26,10 +26,10 @@ class TravelChatTableViewCell: UITableViewCell {
     }
     
     func configureCellLayout() {
-        chatRoomNameLabel.font = UIFont(name: "Pretendard-SemiBold", size: 17)
-        chatRoomRecentContentLabel.font = UIFont(name: "Pretendard-SemiBold", size: 15)
+        chatRoomNameLabel.font = UIFont.pretendard(size: 17, weight: .semibold)
+        chatRoomRecentContentLabel.font = UIFont.pretendard(size: 15, weight: .semibold)
         chatRoomRecentContentLabel.textColor = .gray
-        chatRoomRecentTimeLabel.font = UIFont(name: "Pretendard-SemiBold", size: 13)
+        chatRoomRecentTimeLabel.font = UIFont.pretendard(size: 13, weight: .semibold)
         chatRoomRecentTimeLabel.textColor = .lightGray
     }
     

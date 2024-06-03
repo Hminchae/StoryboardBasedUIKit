@@ -21,7 +21,7 @@ class TravelChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "TRAVEL CHAT"
+        title = "Travel Chat"
         tableView.separatorStyle = .none
         configureLayout()
         configureTableView()

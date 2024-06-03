@@ -12,36 +12,37 @@ extension UILabel {
     func setHomePhotoTitleLabel() {
         self.textColor = .label
         self.numberOfLines = 0
-        self.font = UIFont(name: "Pretendard-SemiBold", size: 24)
+        self.font = UIFont.pretendard(size: 24, weight: .semibold)
     }
     
     func setHomeSubtitleLabel() {
         self.textColor = .gray
-        self.font = UIFont(name: "Pretendard-Bold", size: 15)
+        self.font = UIFont.pretendard(size: 15, weight: .bold)
     }
     
     func setDateLabel() {
         self.textColor = .gray
-        self.font = UIFont(name: "Pretendard-Medium", size: 13)
+        self.font =  UIFont.pretendard(size: 13, weight: .medium)
         self.textAlignment = .right
     }
     //------------Search---------------
+    
     //-------------City----------------
     func setPrimaryLabel() {
-        self.font = UIFont(name: "Pretendard-SemiBold", size: 17)
+        self.font = UIFont.pretendard(size: 17, weight: .semibold)
         self.textAlignment = .left
         self.textColor = .label
     }
     
     func setSecndaryLabel() {
-        self.font = UIFont(name: "Pretendard-Medium", size: 15)
+        self.font = UIFont.pretendard(size: 15, weight: .medium)
         self.textAlignment = .left
         self.textColor = .lightGray
         self.numberOfLines = 3
     }
     
     func setSmallLabel() {
-        self.font = UIFont(name: "Pretendard-Medium", size: 13)
+        self.font = UIFont.pretendard(size: 13, weight: .medium)
         self.textAlignment = .left
         self.textColor = .lightGray
     }
@@ -49,7 +50,7 @@ extension UILabel {
     func setAdLabel() {
         self.textAlignment = .center
         self.textColor = .black
-        self.font = UIFont(name: "Pretendard-Bold", size: 13)
+        self.font = UIFont.pretendard(size: 13, weight: .bold)
     }
     
     func setAdTitleLabel() {
@@ -57,6 +58,6 @@ extension UILabel {
         self.textAlignment = .center
         self.textColor = .black
         self.numberOfLines = 0
-        self.font = UIFont(name: "Pretendard-ExtraBold", size: 17)
+        self.font = UIFont.pretendard(size: 17, weight: .heavy)
     }
 }

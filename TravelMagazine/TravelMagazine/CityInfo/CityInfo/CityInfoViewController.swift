@@ -15,7 +15,7 @@ class CityInfoViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "도시 정보"
+        title = "City Info"
         configureTableView()
     }
     

@@ -14,7 +14,7 @@ class HomeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "SeSAC TRAVEL"
+        title = "SeSAC Travel"
         tableView.separatorStyle = .none // 테이블뷰 separator 없애기
         tableView.rowHeight = UITableView.automaticDimension
     }

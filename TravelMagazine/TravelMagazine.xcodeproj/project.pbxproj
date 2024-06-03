@@ -16,6 +16,7 @@
 		B122F1352C0AF749001B7D0B /* DetailTravelChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122F1342C0AF749001B7D0B /* DetailTravelChatViewController.swift */; };
 		B122F1392C0AFF39001B7D0B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122F1382C0AFF39001B7D0B /* Protocols.swift */; };
 		B122F13B2C0B0D29001B7D0B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B122F13A2C0B0D29001B7D0B /* String+Extension.swift */; };
+		B15541292C0DF86200DAAB37 /* UIFonts+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15541282C0DF86200DAAB37 /* UIFonts+Extension.swift */; };
 		B15721FA2C0AD97C00D1CE59 /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15721F92C0AD97C00D1CE59 /* ChattingData.swift */; };
 		B15721FC2C0ADA5900D1CE59 /* TravelChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15721FB2C0ADA5900D1CE59 /* TravelChat.storyboard */; };
 		B15721FE2C0ADA8700D1CE59 /* TravelChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15721FD2C0ADA8700D1CE59 /* TravelChatViewController.swift */; };
@@ -70,6 +71,7 @@
 		B122F1342C0AF749001B7D0B /* DetailTravelChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTravelChatViewController.swift; sourceTree = "<group>"; };
 		B122F1382C0AFF39001B7D0B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		B122F13A2C0B0D29001B7D0B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B15541282C0DF86200DAAB37 /* UIFonts+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFonts+Extension.swift"; sourceTree = "<group>"; };
 		B15721F92C0AD97C00D1CE59 /* ChattingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
 		B15721FB2C0ADA5900D1CE59 /* TravelChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TravelChat.storyboard; sourceTree = "<group>"; };
 		B15721FD2C0ADA8700D1CE59 /* TravelChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelChatViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				B189AAFB2C048B32008A11D9 /* UIView+Extension.swift */,
 				B189AAF92C047448008A11D9 /* UIImageView+Extension.swift */,
 				B122F13A2C0B0D29001B7D0B /* String+Extension.swift */,
+				B15541282C0DF86200DAAB37 /* UIFonts+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				B122F12A2C0AED59001B7D0B /* TravelChatTableViewCell.swift in Sources */,
 				B122F1352C0AF749001B7D0B /* DetailTravelChatViewController.swift in Sources */,
 				B18257D12C0265CA003926A7 /* SearchRestaurantTableViewCell.swift in Sources */,
+				B15541292C0DF86200DAAB37 /* UIFonts+Extension.swift in Sources */,
 				B122F1322C0AF6F8001B7D0B /* MyChatTableViewCell.swift in Sources */,
 				B189AAFA2C047448008A11D9 /* UIImageView+Extension.swift in Sources */,
 				B15721FE2C0ADA8700D1CE59 /* TravelChatViewController.swift in Sources */,
