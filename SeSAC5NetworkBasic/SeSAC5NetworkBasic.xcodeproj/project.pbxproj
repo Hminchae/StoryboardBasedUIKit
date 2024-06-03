@@ -72,6 +72,7 @@
 				B1972EC92C0D43880004AE2C /* AppDelegate.swift */,
 				B1972ECB2C0D43880004AE2C /* SceneDelegate.swift */,
 				B1972EEF2C0D5F790004AE2C /* ViewController */,
+				B1972EF12C0D6F970004AE2C /* Enums */,
 				B1972EEE2C0D5F6F0004AE2C /* Protocol */,
 				B1972EED2C0D5F630004AE2C /* Extension */,
 				B1972ED22C0D438A0004AE2C /* Assets.xcassets */,
@@ -115,6 +116,13 @@
 				B1972EE32C0D54C40004AE2C /* BasicTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		B1972EF12C0D6F970004AE2C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

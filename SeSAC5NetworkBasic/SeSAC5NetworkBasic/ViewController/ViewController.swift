@@ -62,8 +62,7 @@ class ViewController: UIViewController {
     
     @objc func plusButtonClicked() {
         let vc = storyboard?.instantiateViewController(withIdentifier: AddEditViewController.identifier) as! AddEditViewController
-        vc.titleValue = "추가하기"
-        vc.placeholder = "추가할 내용을 입력하세요"
+        vc.type = .add
         
         let nav = UINavigationController(rootViewController: vc)
         present(nav, animated: true)
@@ -92,8 +91,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         let vc = storyboard?.instantiateViewController(withIdentifier: AddEditViewController.identifier) as! AddEditViewController
         
-        vc.titleValue = "편집하기"
-        vc.placeholder = "편집할 내용을 입력하세요"
+        vc.type = .edit
+        
         navigationController?.pushViewController(vc, animated: true)
         
 //        let vc = storyboard?.instantiateViewController(withIdentifier: UserViewController.identifier) as! UserViewController
