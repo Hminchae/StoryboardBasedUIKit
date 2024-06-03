@@ -18,6 +18,7 @@
 		B1972EE62C0D54C40004AE2C /* BasicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1972EE42C0D54C40004AE2C /* BasicTableViewCell.xib */; };
 		B1972EE82C0D57E20004AE2C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972EE72C0D57E20004AE2C /* UIColor+Extension.swift */; };
 		B1972EEA2C0D5A290004AE2C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972EE92C0D5A290004AE2C /* UserViewController.swift */; };
+		B1972EEC2C0D5F2A0004AE2C /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972EEB2C0D5F2A0004AE2C /* AddEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B1972EE42C0D54C40004AE2C /* BasicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicTableViewCell.xib; sourceTree = "<group>"; };
 		B1972EE72C0D57E20004AE2C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B1972EE92C0D5A290004AE2C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		B1972EEB2C0D5F2A0004AE2C /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +68,53 @@
 		B1972EC82C0D43880004AE2C /* SeSAC5NetworkBasic */ = {
 			isa = PBXGroup;
 			children = (
+				B1972ECF2C0D43880004AE2C /* Main.storyboard */,
 				B1972EC92C0D43880004AE2C /* AppDelegate.swift */,
 				B1972ECB2C0D43880004AE2C /* SceneDelegate.swift */,
-				B1972ECD2C0D43880004AE2C /* ViewController.swift */,
-				B1972EE32C0D54C40004AE2C /* BasicTableViewCell.swift */,
-				B1972EE42C0D54C40004AE2C /* BasicTableViewCell.xib */,
-				B1972ECF2C0D43880004AE2C /* Main.storyboard */,
-				B1972EE92C0D5A290004AE2C /* UserViewController.swift */,
-				B1972EE12C0D45880004AE2C /* ReusableProtocol.swift */,
-				B1972EE72C0D57E20004AE2C /* UIColor+Extension.swift */,
+				B1972EEF2C0D5F790004AE2C /* ViewController */,
+				B1972EEE2C0D5F6F0004AE2C /* Protocol */,
+				B1972EED2C0D5F630004AE2C /* Extension */,
 				B1972ED22C0D438A0004AE2C /* Assets.xcassets */,
 				B1972ED42C0D438A0004AE2C /* LaunchScreen.storyboard */,
 				B1972ED72C0D438A0004AE2C /* Info.plist */,
 			);
 			path = SeSAC5NetworkBasic;
+			sourceTree = "<group>";
+		};
+		B1972EED2C0D5F630004AE2C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B1972EE72C0D57E20004AE2C /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B1972EEE2C0D5F6F0004AE2C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B1972EE12C0D45880004AE2C /* ReusableProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B1972EEF2C0D5F790004AE2C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B1972EF02C0D5F990004AE2C /* Cell */,
+				B1972ECD2C0D43880004AE2C /* ViewController.swift */,
+				B1972EE92C0D5A290004AE2C /* UserViewController.swift */,
+				B1972EEB2C0D5F2A0004AE2C /* AddEditViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B1972EF02C0D5F990004AE2C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B1972EE42C0D54C40004AE2C /* BasicTableViewCell.xib */,
+				B1972EE32C0D54C40004AE2C /* BasicTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +193,7 @@
 				B1972ECE2C0D43880004AE2C /* ViewController.swift in Sources */,
 				B1972EE22C0D45880004AE2C /* ReusableProtocol.swift in Sources */,
 				B1972ECA2C0D43880004AE2C /* AppDelegate.swift in Sources */,
+				B1972EEC2C0D5F2A0004AE2C /* AddEditViewController.swift in Sources */,
 				B1972EE82C0D57E20004AE2C /* UIColor+Extension.swift in Sources */,
 				B1972ECC2C0D43880004AE2C /* SceneDelegate.swift in Sources */,
 				B1972EE52C0D54C40004AE2C /* BasicTableViewCell.swift in Sources */,

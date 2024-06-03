@@ -1,5 +1,5 @@
 //
-//  UserViewController.swift
+//  AddEditViewController.swift
 //  SeSAC5NetworkBasic
 //
 //  Created by 황민채 on 6/3/24.
@@ -7,12 +7,17 @@
 
 import UIKit
 
-class UserViewController: UIViewController {
-
+class AddEditViewController: UIViewController {
+    
+    var titleValue: String = ""
+    var placeholder: String = ""
+    
+    @IBOutlet weak var topTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navigationItem.title = titleValue
+        topTextField.placeholder = placeholder
     }
     
 

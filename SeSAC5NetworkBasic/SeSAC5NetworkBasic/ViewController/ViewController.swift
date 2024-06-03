@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        configureBarButtonItem()
     }
     
     // self: 클래스의 인스턴스
@@ -51,7 +52,21 @@ class ViewController: UIViewController {
         tableView.register(xib, forCellReuseIdentifier: BasicTableViewCell.identifier)
         
         tableView.rowHeight = 80
-        tableView.separatorColor = .red
+        tableView.separatorColor = .gray
+    }
+    
+    func configureBarButtonItem() {
+        let item = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(plusButtonClicked))
+        navigationItem.rightBarButtonItem = item
+    }
+    
+    @objc func plusButtonClicked() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: AddEditViewController.identifier) as! AddEditViewController
+        vc.titleValue = "추가하기"
+        vc.placeholder = "추가할 내용을 입력하세요"
+        
+        let nav = UINavigationController(rootViewController: vc)
+        present(nav, animated: true)
     }
 }
 
@@ -74,5 +89,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(#function)
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: AddEditViewController.identifier) as! AddEditViewController
+        
+        vc.titleValue = "편집하기"
+        vc.placeholder = "편집할 내용을 입력하세요"
+        navigationController?.pushViewController(vc, animated: true)
+        
+//        let vc = storyboard?.instantiateViewController(withIdentifier: UserViewController.identifier) as! UserViewController
+//
+//        vc.data = list[indexPath.row]
+//        
+//        present(vc, animated: true)
     }
 }
