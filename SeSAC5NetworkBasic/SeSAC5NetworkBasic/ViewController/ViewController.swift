@@ -57,7 +57,9 @@ class ViewController: UIViewController {
     
     func configureBarButtonItem() {
         let item = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(plusButtonClicked))
+        let item2 = UIBarButtonItem(image: UIImage(systemName: "heart.fill"), style: .plain, target: self, action: #selector(heartButtonClicked))
         navigationItem.rightBarButtonItem = item
+        navigationItem.leftBarButtonItem = item2
     }
     
     @objc func plusButtonClicked() {
@@ -66,6 +68,14 @@ class ViewController: UIViewController {
         
         let nav = UINavigationController(rootViewController: vc)
         present(nav, animated: true)
+    }
+    
+    // 💡스토리보드 없을 때 화면 전환
+    @objc func heartButtonClicked() {
+        //let vc = FrameViewController()
+        let vc = Snap2ViewController()
+        //present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
