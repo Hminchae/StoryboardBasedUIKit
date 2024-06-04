@@ -12,6 +12,8 @@
 		B15541312C0EB1C000DAAB37 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B15541302C0EB1C000DAAB37 /* SnapKit */; };
 		B15541332C0EB30900DAAB37 /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15541322C0EB30900DAAB37 /* SnapViewController.swift */; };
 		B15541352C0EBC2000DAAB37 /* Snap2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15541342C0EBC2000DAAB37 /* Snap2ViewController.swift */; };
+		B15541382C0EED5200DAAB37 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15541372C0EED5200DAAB37 /* LottoViewController.swift */; };
+		B155413B2C0EEDC800DAAB37 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B155413A2C0EEDC800DAAB37 /* Alamofire */; };
 		B1972ECA2C0D43880004AE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972EC92C0D43880004AE2C /* AppDelegate.swift */; };
 		B1972ECC2C0D43880004AE2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972ECB2C0D43880004AE2C /* SceneDelegate.swift */; };
 		B1972ECE2C0D43880004AE2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972ECD2C0D43880004AE2C /* ViewController.swift */; };
@@ -31,6 +33,7 @@
 		B155412D2C0EA2A700DAAB37 /* ConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsViewController.swift; sourceTree = "<group>"; };
 		B15541322C0EB30900DAAB37 /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
 		B15541342C0EBC2000DAAB37 /* Snap2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2ViewController.swift; sourceTree = "<group>"; };
+		B15541372C0EED5200DAAB37 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		B1972EC62C0D43880004AE2C /* SeSAC5NetworkBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC5NetworkBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1972EC92C0D43880004AE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1972ECB2C0D43880004AE2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B15541312C0EB1C000DAAB37 /* SnapKit in Frameworks */,
+				B155413B2C0EEDC800DAAB37 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +72,14 @@
 				B15541342C0EBC2000DAAB37 /* Snap2ViewController.swift */,
 			);
 			path = Codebase;
+			sourceTree = "<group>";
+		};
+		B15541362C0EED3A00DAAB37 /* NetworkBasic */ = {
+			isa = PBXGroup;
+			children = (
+				B15541372C0EED5200DAAB37 /* LottoViewController.swift */,
+			);
+			path = NetworkBasic;
 			sourceTree = "<group>";
 		};
 		B1972EBD2C0D43880004AE2C = {
@@ -89,6 +101,7 @@
 		B1972EC82C0D43880004AE2C /* SeSAC5NetworkBasic */ = {
 			isa = PBXGroup;
 			children = (
+				B15541362C0EED3A00DAAB37 /* NetworkBasic */,
 				B155412A2C0E98B900DAAB37 /* Codebase */,
 				B1972ECF2C0D43880004AE2C /* Main.storyboard */,
 				B1972EC92C0D43880004AE2C /* AppDelegate.swift */,
@@ -165,6 +178,7 @@
 			name = SeSAC5NetworkBasic;
 			packageProductDependencies = (
 				B15541302C0EB1C000DAAB37 /* SnapKit */,
+				B155413A2C0EEDC800DAAB37 /* Alamofire */,
 			);
 			productName = SeSAC5NetworkBasic;
 			productReference = B1972EC62C0D43880004AE2C /* SeSAC5NetworkBasic.app */;
@@ -196,6 +210,7 @@
 			mainGroup = B1972EBD2C0D43880004AE2C;
 			packageReferences = (
 				B155412F2C0EB1C000DAAB37 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B15541392C0EEDC800DAAB37 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = B1972EC72C0D43880004AE2C /* Products */;
 			projectDirPath = "";
@@ -236,6 +251,7 @@
 				B1972ECC2C0D43880004AE2C /* SceneDelegate.swift in Sources */,
 				B1972EE52C0D54C40004AE2C /* BasicTableViewCell.swift in Sources */,
 				B155412E2C0EA2A700DAAB37 /* ConstraintsViewController.swift in Sources */,
+				B15541382C0EED5200DAAB37 /* LottoViewController.swift in Sources */,
 				B15541352C0EBC2000DAAB37 /* Snap2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,6 +495,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		B15541392C0EEDC800DAAB37 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -486,6 +510,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B155412F2C0EB1C000DAAB37 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		B155413A2C0EEDC800DAAB37 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B15541392C0EEDC800DAAB37 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

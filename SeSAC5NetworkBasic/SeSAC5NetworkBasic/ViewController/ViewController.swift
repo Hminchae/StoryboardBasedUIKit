@@ -73,7 +73,8 @@ class ViewController: UIViewController {
     // 💡스토리보드 없을 때 화면 전환
     @objc func heartButtonClicked() {
         //let vc = FrameViewController()
-        let vc = Snap2ViewController()
+//        let vc = Snap2ViewController()
+        let vc = LottoViewController()
         //present(vc, animated: true)
         navigationController?.pushViewController(vc, animated: true)
     }
