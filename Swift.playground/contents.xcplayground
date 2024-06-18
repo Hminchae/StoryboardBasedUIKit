@@ -4,5 +4,9 @@
         <page name='StructClass'/>
         <page name='Protocol'/>
         <page name='Property'/>
+        <page name='Codable'/>
+        <page name='Codable2'/>
+        <page name='Codable3'/>
+        <page name='Codable4'/>
     </pages>
 </playground>
