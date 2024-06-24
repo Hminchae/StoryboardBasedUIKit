@@ -25,13 +25,10 @@ class LottoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        AF.request(url).responseDecodable(of: Lotto.self) { response in
-            switch response.result {
-            case .success(let value):
-                print(value.drwNo)
-            case .failure(let error):
-                print(error)
-            }
+        view.backgroundColor = .white
+        NetworkManager.shared.getLotto("1105") { value in
+            self.title = "\(value)ㅋㅋ"
+            
         }
     }
 }

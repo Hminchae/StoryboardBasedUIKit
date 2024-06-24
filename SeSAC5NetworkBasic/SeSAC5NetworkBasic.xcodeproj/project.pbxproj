@@ -14,6 +14,7 @@
 		B15541352C0EBC2000DAAB37 /* Snap2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15541342C0EBC2000DAAB37 /* Snap2ViewController.swift */; };
 		B15541382C0EED5200DAAB37 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15541372C0EED5200DAAB37 /* LottoViewController.swift */; };
 		B155413B2C0EEDC800DAAB37 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B155413A2C0EEDC800DAAB37 /* Alamofire */; };
+		B1642E242C24039A003032F9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1642E232C24039A003032F9 /* NetworkManager.swift */; };
 		B1972ECA2C0D43880004AE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972EC92C0D43880004AE2C /* AppDelegate.swift */; };
 		B1972ECC2C0D43880004AE2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972ECB2C0D43880004AE2C /* SceneDelegate.swift */; };
 		B1972ECE2C0D43880004AE2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1972ECD2C0D43880004AE2C /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 		B15541322C0EB30900DAAB37 /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
 		B15541342C0EBC2000DAAB37 /* Snap2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2ViewController.swift; sourceTree = "<group>"; };
 		B15541372C0EED5200DAAB37 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
+		B1642E232C24039A003032F9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B1972EC62C0D43880004AE2C /* SeSAC5NetworkBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC5NetworkBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1972EC92C0D43880004AE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1972ECB2C0D43880004AE2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				B15541372C0EED5200DAAB37 /* LottoViewController.swift */,
+				B1642E232C24039A003032F9 /* NetworkManager.swift */,
 			);
 			path = NetworkBasic;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				B1972EE82C0D57E20004AE2C /* UIColor+Extension.swift in Sources */,
 				B1972ECC2C0D43880004AE2C /* SceneDelegate.swift in Sources */,
 				B1972EE52C0D54C40004AE2C /* BasicTableViewCell.swift in Sources */,
+				B1642E242C24039A003032F9 /* NetworkManager.swift in Sources */,
 				B155412E2C0EA2A700DAAB37 /* ConstraintsViewController.swift in Sources */,
 				B15541382C0EED5200DAAB37 /* LottoViewController.swift in Sources */,
 				B15541352C0EBC2000DAAB37 /* Snap2ViewController.swift in Sources */,
