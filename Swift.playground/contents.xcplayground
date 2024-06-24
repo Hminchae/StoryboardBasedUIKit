@@ -8,5 +8,6 @@
         <page name='Codable2'/>
         <page name='Codable3'/>
         <page name='Codable4'/>
+        <page name='FirstClassObject'/>
     </pages>
 </playground>
